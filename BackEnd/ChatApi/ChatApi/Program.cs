@@ -42,6 +42,10 @@ namespace ChatApi
 
             builder.Services.AddScoped<UserRepo>();
             builder.Services.AddScoped<UserService>();
+            builder.Services.AddScoped<RoomRepo>();
+            builder.Services.AddScoped<RoomService>();
+            builder.Services.AddScoped<MessageRepo>();
+            builder.Services.AddScoped<MessageService>();
 
             var app = builder.Build();
 

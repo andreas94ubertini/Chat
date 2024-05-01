@@ -1,6 +1,7 @@
 ﻿using ChatApi.DTO;
 using ChatApi.Models;
 using ChatApi.Repos;
+using MongoDB.Bson;
 using System.Runtime.CompilerServices;
 
 namespace ChatApi.Services
@@ -9,10 +10,12 @@ namespace ChatApi.Services
     {
         #region Injection
         private readonly UserRepo _repo;
+        private readonly RoomRepo _roomRepo;
 
-        public UserService(UserRepo repository)
+        public UserService(UserRepo repository, RoomRepo roomRepo)
         {
             _repo = repository;
+            _roomRepo = roomRepo;
         }
         #endregion
 
@@ -23,6 +26,7 @@ namespace ChatApi.Services
                 Username = newUser.Us,
                 Psw = newUser.Ps
             };
+            _roomRepo.InsertUserIntoChatRoom(newUser.Us, new ObjectId("6632374d4a7668546ed7237e"));
             return _repo.Create(u);
 
         }
