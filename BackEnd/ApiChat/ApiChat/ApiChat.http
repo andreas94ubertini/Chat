@@ -1,0 +1,6 @@
+@ApiChat_HostAddress = http://localhost:5225
+
+GET {{ApiChat_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
