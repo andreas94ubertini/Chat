@@ -66,8 +66,7 @@
               "RelativeToolTip": "ChatApi\\Controllers\\UtentiController.cs",
               "ViewState": "AQIAAC4AAAAAAAAAAAA9wDwAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T09:49:27.67Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-01T09:49:27.67Z"
             },
             {
               "$type": "Document",
@@ -79,8 +78,7 @@
               "RelativeToolTip": "ChatApi\\Controllers\\AuthController.cs",
               "ViewState": "AQIAAC4AAAAAAAAAAAAuwD8AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T08:38:14.346Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-01T08:38:14.346Z"
             },
             {
               "$type": "Document",
@@ -92,8 +90,7 @@
               "RelativeToolTip": "ChatApi\\DTO\\UtentiDto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T09:45:32.463Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-01T09:45:32.463Z"
             },
             {
               "$type": "Document",
@@ -105,8 +102,7 @@
               "RelativeToolTip": "ChatApi\\Services\\UserService.cs",
               "ViewState": "AQIAAAwAAAAAAAAAAAAswB4AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T09:42:20.061Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-01T09:42:20.061Z"
             },
             {
               "$type": "Document",
@@ -116,7 +112,7 @@
               "RelativeDocumentMoniker": "ChatApi\\Repos\\UserRepo.cs",
               "ToolTip": "C:\\Users\\ubert\\Desktop\\Chat\\BackEnd\\ChatApi\\ChatApi\\Repos\\UserRepo.cs",
               "RelativeToolTip": "ChatApi\\Repos\\UserRepo.cs",
-              "ViewState": "AQIAAFMAAAAAAAAAAAA6wF4AAAAAAAAA",
+              "ViewState": "AQIAAEEAAAAAAAAAAAAAAF4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-01T09:29:16.983Z",
               "EditorCaption": ""
@@ -131,8 +127,7 @@
               "RelativeToolTip": "ChatApi\\Repos\\IRepo.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T09:27:58.894Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-01T09:27:58.894Z"
             },
             {
               "$type": "Document",
@@ -144,8 +139,7 @@
               "RelativeToolTip": "ChatApi\\Program.cs",
               "ViewState": "AQIAAB0AAAAAAAAAAAAgwCcAAABHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T08:28:54.472Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-01T08:28:54.472Z"
             },
             {
               "$type": "Document",
@@ -157,8 +151,7 @@
               "RelativeToolTip": "ChatApi\\Filter\\AuthorizeUserType.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAvwBIAAABOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T08:40:42.633Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-01T08:40:42.633Z"
             },
             {
               "$type": "Document",
@@ -170,8 +163,7 @@
               "RelativeToolTip": "ChatApi\\Models\\Risposta.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T08:34:35.596Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-01T08:34:35.596Z"
             },
             {
               "$type": "Document",
@@ -183,8 +175,7 @@
               "RelativeToolTip": "ChatApi\\Models\\UserLoginModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T08:33:50.5Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-01T08:33:50.5Z"
             }
           ]
         }
