@@ -1,21 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\titon\\Desktop\\Chat\\BackEnd\\ChatApi\\",
+  "WorkspaceRootPath": "C:\\Users\\ubert\\Desktop\\Chat\\BackEnd\\ChatApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{134EF6F2-08D8-4CEB-A9DC-00715EF127F1}|ChatApi\\ChatApi.csproj|c:\\users\\titon\\desktop\\chat\\backend\\chatapi\\chatapi\\dto\\chatroomdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{134EF6F2-08D8-4CEB-A9DC-00715EF127F1}|ChatApi\\ChatApi.csproj|c:\\users\\ubert\\desktop\\chat\\backend\\chatapi\\chatapi\\dto\\chatroomdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{134EF6F2-08D8-4CEB-A9DC-00715EF127F1}|ChatApi\\ChatApi.csproj|solutionrelative:chatapi\\dto\\chatroomdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{134EF6F2-08D8-4CEB-A9DC-00715EF127F1}|ChatApi\\ChatApi.csproj|c:\\users\\titon\\desktop\\chat\\backend\\chatapi\\chatapi\\models\\chatroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{134EF6F2-08D8-4CEB-A9DC-00715EF127F1}|ChatApi\\ChatApi.csproj|solutionrelative:chatapi\\models\\chatroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{134EF6F2-08D8-4CEB-A9DC-00715EF127F1}|ChatApi\\ChatApi.csproj|c:\\users\\titon\\desktop\\chat\\backend\\chatapi\\chatapi\\dto\\messagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{134EF6F2-08D8-4CEB-A9DC-00715EF127F1}|ChatApi\\ChatApi.csproj|c:\\users\\ubert\\desktop\\chat\\backend\\chatapi\\chatapi\\dto\\messagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{134EF6F2-08D8-4CEB-A9DC-00715EF127F1}|ChatApi\\ChatApi.csproj|solutionrelative:chatapi\\dto\\messagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{134EF6F2-08D8-4CEB-A9DC-00715EF127F1}|ChatApi\\ChatApi.csproj|c:\\users\\titon\\desktop\\chat\\backend\\chatapi\\chatapi\\models\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{134EF6F2-08D8-4CEB-A9DC-00715EF127F1}|ChatApi\\ChatApi.csproj|c:\\users\\ubert\\desktop\\chat\\backend\\chatapi\\chatapi\\models\\chatroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{134EF6F2-08D8-4CEB-A9DC-00715EF127F1}|ChatApi\\ChatApi.csproj|solutionrelative:chatapi\\models\\chatroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{134EF6F2-08D8-4CEB-A9DC-00715EF127F1}|ChatApi\\ChatApi.csproj|c:\\users\\ubert\\desktop\\chat\\backend\\chatapi\\chatapi\\models\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{134EF6F2-08D8-4CEB-A9DC-00715EF127F1}|ChatApi\\ChatApi.csproj|solutionrelative:chatapi\\models\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -26,63 +26,65 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": -1,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MessageDto.cs",
-              "DocumentMoniker": "C:\\Users\\titon\\Desktop\\Chat\\BackEnd\\ChatApi\\ChatApi\\DTO\\MessageDto.cs",
-              "RelativeDocumentMoniker": "ChatApi\\DTO\\MessageDto.cs",
-              "ToolTip": "C:\\Users\\titon\\Desktop\\Chat\\BackEnd\\ChatApi\\ChatApi\\DTO\\MessageDto.cs",
-              "RelativeToolTip": "ChatApi\\DTO\\MessageDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T09:25:04.147Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ChatRoomDto.cs",
-              "DocumentMoniker": "C:\\Users\\titon\\Desktop\\Chat\\BackEnd\\ChatApi\\ChatApi\\DTO\\ChatRoomDto.cs",
-              "RelativeDocumentMoniker": "ChatApi\\DTO\\ChatRoomDto.cs",
-              "ToolTip": "C:\\Users\\titon\\Desktop\\Chat\\BackEnd\\ChatApi\\ChatApi\\DTO\\ChatRoomDto.cs",
-              "RelativeToolTip": "ChatApi\\DTO\\ChatRoomDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAA3AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T09:28:32.269Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             }
           ]
         },
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Message.cs",
-              "DocumentMoniker": "C:\\Users\\titon\\Desktop\\Chat\\BackEnd\\ChatApi\\ChatApi\\Models\\Message.cs",
-              "RelativeDocumentMoniker": "ChatApi\\Models\\Message.cs",
-              "ToolTip": "C:\\Users\\titon\\Desktop\\Chat\\BackEnd\\ChatApi\\ChatApi\\Models\\Message.cs",
-              "RelativeToolTip": "ChatApi\\Models\\Message.cs",
+              "DocumentIndex": 0,
+              "Title": "ChatRoomDto.cs",
+              "DocumentMoniker": "C:\\Users\\ubert\\Desktop\\Chat\\BackEnd\\ChatApi\\ChatApi\\DTO\\ChatRoomDto.cs",
+              "RelativeDocumentMoniker": "ChatApi\\DTO\\ChatRoomDto.cs",
+              "ToolTip": "C:\\Users\\ubert\\Desktop\\Chat\\BackEnd\\ChatApi\\ChatApi\\DTO\\ChatRoomDto.cs",
+              "RelativeToolTip": "ChatApi\\DTO\\ChatRoomDto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T09:25:44.99Z",
+              "WhenOpened": "2024-05-02T09:38:06.577Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "MessageDto.cs",
+              "DocumentMoniker": "C:\\Users\\ubert\\Desktop\\Chat\\BackEnd\\ChatApi\\ChatApi\\DTO\\MessageDto.cs",
+              "RelativeDocumentMoniker": "ChatApi\\DTO\\MessageDto.cs",
+              "ToolTip": "C:\\Users\\ubert\\Desktop\\Chat\\BackEnd\\ChatApi\\ChatApi\\DTO\\MessageDto.cs",
+              "RelativeToolTip": "ChatApi\\DTO\\MessageDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T09:38:03.715Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Message.cs",
+              "DocumentMoniker": "C:\\Users\\ubert\\Desktop\\Chat\\BackEnd\\ChatApi\\ChatApi\\Models\\Message.cs",
+              "RelativeDocumentMoniker": "ChatApi\\Models\\Message.cs",
+              "ToolTip": "C:\\Users\\ubert\\Desktop\\Chat\\BackEnd\\ChatApi\\ChatApi\\Models\\Message.cs",
+              "RelativeToolTip": "ChatApi\\Models\\Message.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T09:25:44.99Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "ChatRoom.cs",
-              "DocumentMoniker": "C:\\Users\\titon\\Desktop\\Chat\\BackEnd\\ChatApi\\ChatApi\\Models\\ChatRoom.cs",
+              "DocumentMoniker": "C:\\Users\\ubert\\Desktop\\Chat\\BackEnd\\ChatApi\\ChatApi\\Models\\ChatRoom.cs",
               "RelativeDocumentMoniker": "ChatApi\\Models\\ChatRoom.cs",
-              "ToolTip": "C:\\Users\\titon\\Desktop\\Chat\\BackEnd\\ChatApi\\ChatApi\\Models\\ChatRoom.cs",
+              "ToolTip": "C:\\Users\\ubert\\Desktop\\Chat\\BackEnd\\ChatApi\\ChatApi\\Models\\ChatRoom.cs",
               "RelativeToolTip": "ChatApi\\Models\\ChatRoom.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAATAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-02T09:28:47.377Z",
               "EditorCaption": ""
