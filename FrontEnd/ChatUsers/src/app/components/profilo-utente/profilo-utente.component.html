@@ -1,1 +1,43 @@
-<p>profilo-utente works!</p>
+
+<div class="container mt-5">
+
+  <div class="row d-flex justify-content-center">
+
+    <div class="col-md-7">
+
+      <div class="card p-3 py-4">
+
+        <div class="text-center">
+          <img src="https://i.imgur.com/bDLhJiP.jpg" width="100" class="rounded-circle">
+        </div>
+
+        <div class="text-center mt-3">
+          <span class="bg-secondary p-1 px-4 rounded text-white">User</span>
+          <h5 class="mt-2 mb-0">{{user?.us}}</h5>
+
+          <div class="buttons mt-2">
+
+            <button class="btn btn-outline-primary px-4">Home</button>
+            <button class="btn btn-danger px-4 ms-3">LogOut</button>
+          </div>
+          <div class="card-body">
+            <div *ngFor="let chat of user?.myChats" class="border rounded-1">
+              <a href="/chat/{{chat.idc}}" class="text-decoration-none text-reset">
+                <p>{{chat.roN}}</p>
+                <p>{{chat.des}}</p>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
