@@ -15,7 +15,7 @@ export class ChatService {
     // });
 
     return this.http.get<Risposta>(`http://localhost:5297/Room/chat/${id}`, {
-      // headers: headerCustom,
+      // headers: headerCusto
     });
   }
 }
