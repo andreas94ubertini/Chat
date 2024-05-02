@@ -1,0 +1,26 @@
+[{
+  "_id": {
+    "$oid": "663241821e22ba84f564c7ac"
+  },
+  "text": "Ciao a tutti!!",
+  "dataInvio": {
+    "$date": "2024-05-01T00:00:00.000Z"
+  },
+  "sender": "Saerdna",
+  "RoomId": {
+    "$oid": "6632374d4a7668546ed7237e"
+  }
+},
+{
+  "_id": {
+    "$oid": "663287113516e087e0709630"
+  },
+  "text": "Bellaaaaaaa!",
+  "dataInvio": {
+    "$date": "2024-05-01T00:00:00.000Z"
+  },
+  "sender": "MarioRed",
+  "RoomId": {
+    "$oid": "6632374d4a7668546ed7237e"
+  }
+}]
