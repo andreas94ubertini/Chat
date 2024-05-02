@@ -4,7 +4,7 @@ namespace ChatApi.DTO
 {
     public class ChatRoomDto
     {
-        public ObjectId MyProperty { get; set; }
+        public string? Idc { get; set; }
 
         public string? RoN { get; set; }
 
