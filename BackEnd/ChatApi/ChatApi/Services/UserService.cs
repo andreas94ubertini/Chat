@@ -22,7 +22,7 @@ namespace ChatApi.Services
 
         public bool Create(UtentiDto newUser)
         {
-            if (GetUtente(newUser.Us) != null)
+            if (GetUtente(newUser.Us) == null)
             {
                 Utenti u = new Utenti()
                 {
