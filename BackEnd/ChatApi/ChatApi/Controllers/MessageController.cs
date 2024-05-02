@@ -16,15 +16,15 @@ namespace ChatApi.Controllers
             _service = service;
         }
         #endregion
-        [HttpPost]
-        public IActionResult InserisciDipendente(Message m)
+        [HttpPost("sendMessage/{roomID}")]
+        public IActionResult InserisciMessaggio(Message m, string roomID)
         {
             if (User.Claims.FirstOrDefault(x => x.Type == "Username")?.Value != null)
             {
                 m.Sender = User.Claims.First(x => x.Type == "Username").Value;
 
             }
-            m.RoomId = new MongoDB.Bson.ObjectId("6632374d4a7668546ed7237e");
+            m.RoomId = new MongoDB.Bson.ObjectId(roomID);
             if (_service.InsertMessage(m))
                 return Ok(new Risposta() { Status = "SUCCESS" });
 

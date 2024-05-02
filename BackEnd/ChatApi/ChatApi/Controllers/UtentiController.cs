@@ -38,7 +38,7 @@ namespace ChatApi.Controllers
 
             return Ok(new Risposta()
             {
-                Status = "Errore durante l'inserimento"
+                Status = "Errore durante la registrazione"
             });
         }
 

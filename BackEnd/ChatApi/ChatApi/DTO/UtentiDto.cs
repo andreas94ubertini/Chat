@@ -1,4 +1,6 @@
-﻿namespace ChatApi.DTO
+﻿using ChatApi.Models;
+
+namespace ChatApi.DTO
 {
     public class UtentiDto
     {
@@ -7,5 +9,7 @@
         public string Ps { get; set; } = null!;
 
         public string? PI{ get; set; }
+
+        public List<ChatRoom>? MyChats { get; set; }
     }
 }

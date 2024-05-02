@@ -50,7 +50,7 @@ namespace ChatApi.Repos
 
         public IEnumerable<ChatRoom> GetAll()
         {
-            throw new NotImplementedException();
+            return Rooms.Find(p => true).ToList();
         }
 
         public ChatRoom? GetByCod(string codice)
@@ -103,6 +103,19 @@ namespace ChatApi.Repos
             room.Messages = new List<Message>();
             room.Messages = _messageRepo.GetMessages(id);
             return room;
+        }
+
+        public List<ChatRoom>? GetRoomByUser(string username)
+        {
+            List<ChatRoom> rooms = new List<ChatRoom>();
+            foreach(ChatRoom c in GetAll())
+            {
+                if (c.Users.Contains(username))
+                {
+                    rooms.Add(c);
+                }
+            }
+            return rooms;
         }
     }
 }

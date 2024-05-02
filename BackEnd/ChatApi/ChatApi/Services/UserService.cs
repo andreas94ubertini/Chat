@@ -19,16 +19,20 @@ namespace ChatApi.Services
         }
         #endregion
 
+
         public bool Create(UtentiDto newUser)
         {
-            Utenti u = new Utenti()
+            if (GetUtente(newUser.Us) != null)
             {
-                Username = newUser.Us,
-                Psw = newUser.Ps
-            };
-            _roomRepo.InsertUserIntoChatRoom(newUser.Us, new ObjectId("6632374d4a7668546ed7237e"));
-            return _repo.Create(u);
-
+                Utenti u = new Utenti()
+                {
+                    Username = newUser.Us,
+                    Psw = newUser.Ps
+                };
+                _roomRepo.InsertUserIntoChatRoom(newUser.Us, new ObjectId("6632374d4a7668546ed7237e"));
+                return _repo.Create(u);
+            }
+            return false;
         }
 
         public bool LoginUtente(UserLoginModel obj)
@@ -39,9 +43,22 @@ namespace ChatApi.Services
             return _repo.CheckLogin(obj) is not null ? true : false;
         }
 
-        public Utenti? GetUtente(string username)
+        public UtentiDto? GetUtente(string username)
         {
-            return _repo.GetByUsername(username);
+            Utenti? u = _repo.GetByUsername(username);
+            if (u != null) {
+                UtentiDto objDto = new UtentiDto()
+                {
+                    Us = u.Username,
+                    Ps = u.Psw,
+                    PI = u.ProfileImg,
+                    MyChats = _roomRepo.GetRoomByUser(username)
+
+                };
+                return objDto;
+                
+            }
+            return null;
         }
     }
 }

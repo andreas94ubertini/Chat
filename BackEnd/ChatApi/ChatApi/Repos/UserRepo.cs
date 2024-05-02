@@ -8,6 +8,7 @@ namespace ChatApi.Repos
         #region Injection
         private readonly ILogger _logger;
         private readonly ChatUsersContext _context;
+      
 
         public UserRepo(ChatUsersContext context, ILogger<UserRepo> logger)
         {

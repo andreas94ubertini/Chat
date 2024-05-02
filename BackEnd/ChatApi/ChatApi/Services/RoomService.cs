@@ -24,5 +24,9 @@ namespace ChatApi.Services
         public ChatRoom? GetRoom(ObjectId id) {
             return _repo.GetRoom(id);
         }
+
+        public List<ChatRoom>? GetRoomsByUser(string username) {
+            return _repo.GetRoomByUser(username);
+        }
     }
 }
