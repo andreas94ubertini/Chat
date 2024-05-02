@@ -29,7 +29,7 @@ namespace ChatApi.Services
                     Username = newUser.Us,
                     Psw = newUser.Ps
                 };
-                //_roomRepo.InsertUserIntoChatRoom(newUser.Us, new ObjectId("6632374d4a7668546ed7237e"));
+                _roomRepo.InsertUserIntoChatRoom(newUser.Us, new ObjectId("6632374d4a7668546ed7237e"));
                 return _repo.Create(u);
             }
             return false;
