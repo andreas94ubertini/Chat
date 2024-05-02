@@ -5,7 +5,7 @@ namespace ChatApi.DTO
     public class MessageDto
     {
 
-        public ObjectId IdM { get; set; }
+        public string? IdM { get; set; }
 
         public string? Tex { get; set; }
 
@@ -13,6 +13,6 @@ namespace ChatApi.DTO
 
         public string? Sen { get; set; }
 
-        public ObjectId RoI { get; set; }
+        public string? RoI { get; set; }
     }
 }
