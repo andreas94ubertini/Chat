@@ -7,7 +7,7 @@ import { Risposta } from '../models/risposta';
   providedIn: 'root',
 })
 export class UtentiService {
-  base_url: string = 'https://localhost:5297/Utenti/profiloutente';
+  base_url: string = 'http://localhost:5297/Utenti/profiloutente';
   constructor(private http: HttpClient) {}
 
   recuperaProfilo(): Observable<Risposta> {

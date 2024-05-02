@@ -65,9 +65,28 @@ namespace ChatApi.Services
             }
             return null;
         }
-
-        public List<ChatRoom>? GetRoomsByUser(string username) {
-            return _repo.GetRoomByUser(username);
+        public bool InsertUserIntoChatRoom(string username, ObjectId roomId)
+        {
+            return _repo.InsertUserIntoChatRoom(username, roomId);
+        }
+        public List<ChatRoomDto>? GetRoomsByUser(string username) {
+            List<ChatRoom>? chats = _repo.GetRoomByUser(username);
+            List<ChatRoomDto>? chatsDto = new List<ChatRoomDto>();
+            if(chats!= null)
+            {
+                foreach(ChatRoom chat in chats)
+                {
+                     ChatRoomDto ch = new ChatRoomDto()
+                    {
+                         Idc = chat.Id.ToString(),
+                         RoN = chat.RoomName,
+                         Des = chat.Description,
+                         Use = chat.Users
+                    };
+                    chatsDto.Add(ch);
+                }
+            }
+            return chatsDto;
         }
     }
 }

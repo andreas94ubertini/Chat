@@ -10,6 +10,6 @@ namespace ChatApi.DTO
 
         public string? PI{ get; set; }
 
-        public List<ChatRoom>? MyChats { get; set; }
+        public List<ChatRoomDto>? MyChats { get; set; }
     }
 }

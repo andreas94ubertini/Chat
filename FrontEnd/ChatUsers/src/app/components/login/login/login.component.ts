@@ -17,6 +17,7 @@ export class LoginComponent {
     this.service.login(this.username, this.password).subscribe((risultato) => {
       if (risultato.token) {
         localStorage.setItem('ilToken', risultato.token);
+        this.router.navigateByUrl("/profilo")
       }
     });
   }

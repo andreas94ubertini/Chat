@@ -10,12 +10,12 @@ namespace ChatApi.Services
     {
         #region Injection
         private readonly UserRepo _repo;
-        private readonly RoomRepo _roomRepo;
+        private readonly RoomService _roomService;
 
-        public UserService(UserRepo repository, RoomRepo roomRepo)
+        public UserService(UserRepo repository, RoomService roomService)
         {
             _repo = repository;
-            _roomRepo = roomRepo;
+            _roomService = roomService;
         }
         #endregion
 
@@ -29,7 +29,7 @@ namespace ChatApi.Services
                     Username = newUser.Us,
                     Psw = newUser.Ps
                 };
-                _roomRepo.InsertUserIntoChatRoom(newUser.Us, new ObjectId("6632374d4a7668546ed7237e"));
+                _roomService.InsertUserIntoChatRoom(newUser.Us, new ObjectId("6632374d4a7668546ed7237e"));
                 return _repo.Create(u);
             }
             return false;
@@ -52,7 +52,7 @@ namespace ChatApi.Services
                     Us = u.Username,
                     Ps = u.Psw,
                     PI = u.ProfileImg,
-                    MyChats = _roomRepo.GetRoomByUser(username)
+                    MyChats = _roomService.GetRoomsByUser(username)
 
                 };
                 return objDto;
