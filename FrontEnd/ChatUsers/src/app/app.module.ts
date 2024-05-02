@@ -7,10 +7,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './components/login/login/login.component';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import { ProfiloUtenteComponent } from './components/profilo-utente/profilo-utente.component';
+import { ChatComponent } from './components/login/login/chat/chat.component';
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent, ProfiloUtenteComponent],
+  declarations: [AppComponent, LoginComponent, ChatComponent],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
