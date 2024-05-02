@@ -8,16 +8,15 @@ import { Router } from '@angular/router';
   styleUrl: './login.component.css',
 })
 export class LoginComponent {
-  user: string = '';
-  pass: string = '';
+  username: string = '';
+  password: string = '';
 
   constructor(private service: AuthserviceService, private router: Router) {}
 
   verifica(): void {
-    this.service.login(this.user, this.pass).subscribe((risultato) => {
+    this.service.login(this.username, this.password).subscribe((risultato) => {
       if (risultato.token) {
         localStorage.setItem('ilToken', risultato.token);
-        this.router.navigateByUrl('/profilo');
       }
     });
   }
