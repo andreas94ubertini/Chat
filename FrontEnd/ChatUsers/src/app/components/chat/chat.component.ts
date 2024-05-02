@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { ChatService } from '../../../../services/chat.service';
-import { Chatroom } from '../../../../models/chatroom';
+import { ChatService } from '../../services/chat.service';
+import { Chatroom } from '../../models/chatroom';
 import { ActivatedRoute, Router } from '@angular/router';
-import {AuthserviceService} from "../../../../services/authservice.service";
-import {Utenti} from "../../../../models/utenti";
-import {UtentiService} from "../../../../services/utenti.service";
+import {AuthserviceService} from "../../services/authservice.service";
+import {Utenti} from "../../models/utenti";
+import {UtentiService} from "../../services/utenti.service";
 
 @Component({
   selector: 'app-chat',
