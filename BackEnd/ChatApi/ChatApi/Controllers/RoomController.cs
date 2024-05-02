@@ -19,7 +19,7 @@ namespace ChatApi.Controllers
         }
         #endregion
         [HttpPost]
-        public IActionResult InserisciDipendente(ChatRoom newRoom)
+        public IActionResult NewChatRoom(ChatRoom newRoom)
         {
 
                 if (_service.Inserimento(newRoom))

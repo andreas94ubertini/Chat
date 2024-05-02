@@ -63,5 +63,15 @@ namespace ChatApi.Controllers
             });
         }
 
+        [HttpGet("AllUsers")]
+        public IActionResult GetAllUsers()
+        {
+            return Ok(new Risposta()
+            {
+                Status = "Success",
+                Data = _service.GetAllUtenti()
+            }) ;
+        }
+
     }
 }
