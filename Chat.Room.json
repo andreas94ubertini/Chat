@@ -1,0 +1,14 @@
+[{
+  "_id": {
+    "$oid": "6632374d4a7668546ed7237e"
+  },
+  "name": "Master Room",
+  "description": "Simple Room Where You Can Chat",
+  "Users": [
+    "Saerdna",
+    "MarioRed",
+    "Luigi"
+  ],
+  "MessageID": [],
+  "Messages": null
+}]
