@@ -22,14 +22,14 @@ namespace ChatApi.Services
 
         public bool Create(UtentiDto newUser)
         {
-            if (GetUtente(newUser.Us) != null)
+            if (GetUtente(newUser.Us) == null)
             {
                 Utenti u = new Utenti()
                 {
                     Username = newUser.Us,
                     Psw = newUser.Ps
                 };
-                _roomRepo.InsertUserIntoChatRoom(newUser.Us, new ObjectId("6632374d4a7668546ed7237e"));
+                //_roomRepo.InsertUserIntoChatRoom(newUser.Us, new ObjectId("6632374d4a7668546ed7237e"));
                 return _repo.Create(u);
             }
             return false;
