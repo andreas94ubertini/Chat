@@ -54,7 +54,7 @@ namespace ChatApi.Services
             {
                 ChatRoomDto chat = new ChatRoomDto()
                 {
-                    IdC = c!.Id.ToString(),
+                    Idc = c!.Id.ToString(),
                     RoN = c!.RoomName,
                     Des = c!.Description,
                     Use = c!.Users,
