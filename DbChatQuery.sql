@@ -7,4 +7,5 @@ CREATE TABLE Utenti(
 	isDeleted BIT,
 	userType VARCHAR (10) DEFAULT 'USER'
 );
+
 SELECT * FROM Utenti;
