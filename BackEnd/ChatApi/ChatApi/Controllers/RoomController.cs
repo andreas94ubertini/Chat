@@ -46,5 +46,21 @@ namespace ChatApi.Controllers
                 Data = _service.GetRoom(new ObjectId(id))
             });
         }
+
+        [HttpPost("chat/addUser/{id}")]
+        public IActionResult AddUserToChatRoom(string id, string username)
+        {
+            try
+            {
+                return Ok(new Risposta()
+                {
+
+                })
+            }catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            return BadRequest();
+        }
     }
 }

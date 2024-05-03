@@ -69,6 +69,7 @@ namespace ChatApi.Repos
             ChatRoom? temp = GetById(roomId);
             if (temp != null)
             {
+                //verificare presenza dell'utente nella lista
                 temp.Users.Add(username);
 
                 var filter = Builders<ChatRoom>.Filter.Eq(c => c.Id, temp.Id);

@@ -40,7 +40,7 @@
               "RelativeDocumentMoniker": "ChatApi\\Controllers\\MessageController.cs",
               "ToolTip": "C:\\Users\\ubert\\Desktop\\Chat\\BackEnd\\ChatApi\\ChatApi\\Controllers\\MessageController.cs",
               "RelativeToolTip": "ChatApi\\Controllers\\MessageController.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAgwBcAAAABAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-03T09:32:55.889Z",
               "EditorCaption": ""
@@ -53,7 +53,7 @@
               "RelativeDocumentMoniker": "ChatApi\\Repos\\RoomRepo.cs",
               "ToolTip": "C:\\Users\\ubert\\Desktop\\Chat\\BackEnd\\ChatApi\\ChatApi\\Repos\\RoomRepo.cs",
               "RelativeToolTip": "ChatApi\\Repos\\RoomRepo.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAA1wCEAAAArAAAA",
+              "ViewState": "AQIAAEEAAAAAAAAAAAAmwEcAAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-03T09:24:46.607Z",
               "EditorCaption": ""
@@ -66,7 +66,7 @@
               "RelativeDocumentMoniker": "ChatApi\\Controllers\\RoomController.cs",
               "ToolTip": "C:\\Users\\ubert\\Desktop\\Chat\\BackEnd\\ChatApi\\ChatApi\\Controllers\\RoomController.cs",
               "RelativeToolTip": "ChatApi\\Controllers\\RoomController.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAgwCEAAAAuAAAA",
+              "ViewState": "AQIAADAAAAAAAAAAAAAiwDgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-03T08:48:31.683Z",
               "EditorCaption": ""
@@ -81,8 +81,7 @@
               "RelativeToolTip": "ChatApi\\Services\\RoomService.cs",
               "ViewState": "AQIAABAAAAAAAAAAAAA1wBoAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T09:21:48.854Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-03T09:21:48.854Z"
             }
           ]
         }
