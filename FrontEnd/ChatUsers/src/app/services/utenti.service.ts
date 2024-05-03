@@ -21,4 +21,8 @@ export class UtentiService {
       headers: headerCustom,
     });
   }
+
+  getAllUsers():Observable<Risposta>{
+    return this.http.get<Risposta>("http://localhost:5297/Utenti/AllUsers")
+  }
 }

@@ -37,4 +37,8 @@ export class ChatService {
     });
     return this.http.post<Risposta>("http://localhost:5297/Room", chat, {headers: headerCustom})
   }
+
+  InsertUserToChat(id:string, username:string):Observable<Risposta>{
+    return this.http.post<Risposta>(`http://localhost:5297/Room/chat/addUser/${id}?username=${username}`, username)
+  }
 }

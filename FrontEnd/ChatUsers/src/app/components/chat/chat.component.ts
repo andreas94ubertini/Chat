@@ -16,6 +16,7 @@ export class ChatComponent {
   currentUser:string|undefined;
   idChat!:string;
   handleInterval:any;
+  showOptions: boolean = false;
   constructor(
     private chatSvc: ChatService,
     private router: Router,
@@ -47,5 +48,9 @@ export class ChatComponent {
       this.chat = res.data;
       console.log(res.data);
     });
+  }
+
+  addtrigger() {
+      this.showOptions = !this.showOptions
   }
 }

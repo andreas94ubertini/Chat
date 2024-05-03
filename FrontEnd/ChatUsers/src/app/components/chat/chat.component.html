@@ -4,7 +4,11 @@
       <div class="row g-0">
         <div class="col-12 col-lg-5 col-xl-3 border-right">
           <div class="px-4 d-none d-md-block">
+            <div class="d-flex flex-row align-items-center gap-2">
             <h3 class="text-center mt-2 ">Utenti</h3>
+              <button *ngIf="chat.roN != 'Master Room'" class="btn btn-primary" (click)="addtrigger()">Aggiungi Utente</button>
+            </div>
+            <div *ngIf="showOptions"><app-add-user-to-chat></app-add-user-to-chat></div>
             <a
               href="#"
               class="list-group-item list-group-item-action border-0"
