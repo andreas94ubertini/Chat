@@ -44,7 +44,7 @@ namespace ChatApi.Controllers
 
         [HttpGet("profiloutente")]
         [AuthorizeUserType("USER")]
-        public IActionResult DammiInformazioniUtente()
+        public IActionResult ProfiloUtente()
         {
 
             var nickname = User.Claims.FirstOrDefault(x => x.Type == "Username")?.Value;
