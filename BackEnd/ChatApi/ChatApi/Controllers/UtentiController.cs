@@ -44,7 +44,7 @@ namespace ChatApi.Controllers
 
         [HttpGet("profiloutente")]
         [AuthorizeUserType("USER")]
-        public IActionResult DammiInformazioniUtente()
+        public IActionResult ProfiloUtente()
         {
 
             var nickname = User.Claims.FirstOrDefault(x => x.Type == "Username")?.Value;
@@ -61,6 +61,16 @@ namespace ChatApi.Controllers
                 Status = "Error"
                 
             });
+        }
+
+        [HttpGet("AllUsers")]
+        public IActionResult GetAllUsers()
+        {
+            return Ok(new Risposta()
+            {
+                Status = "Success",
+                Data = _service.GetAllUtenti()
+            }) ;
         }
 
     }
