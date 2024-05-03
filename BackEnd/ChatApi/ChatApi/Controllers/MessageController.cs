@@ -19,15 +19,20 @@ namespace ChatApi.Controllers
         [HttpPost("sendMessage/{roomID}")]
         public IActionResult InserisciMessaggio(Message m, string roomID)
         {
-            if (User.Claims.FirstOrDefault(x => x.Type == "Username")?.Value != null)
+            try
             {
-                m.Sender = User.Claims.First(x => x.Type == "Username").Value;
+                if (User.Claims.FirstOrDefault(x => x.Type == "Username")?.Value != null)
+                {
+                    m.Sender = User.Claims.First(x => x.Type == "Username").Value;
+                    m.RoomId = new MongoDB.Bson.ObjectId(roomID);
+                    if (_service.InsertMessage(m))
+                        return Ok(new Risposta() { Status = "SUCCESS" });
+                }
+            }catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
 
             }
-            m.RoomId = new MongoDB.Bson.ObjectId(roomID);
-            if (_service.InsertMessage(m))
-                return Ok(new Risposta() { Status = "SUCCESS" });
-
             return BadRequest();
         }
     }

@@ -24,13 +24,14 @@ namespace ChatApi.Repos
 
         }
         #endregion
-        public bool Create(ChatRoom entity)
+        public bool Create(ChatRoom entity, string username)
         {
             try
             {
                 if (Rooms.Find(i => i.RoomName == entity.RoomName).ToList().Count > 0)
                     return false;
-
+                
+                entity.Users.Add(username);
                 Rooms.InsertOne(entity);
                 _logger.LogInformation("Inserimento effettuato con successo");
                 return true;
