@@ -67,5 +67,15 @@ namespace ChatApi.Controllers
             }
             return BadRequest();
         }
+
+        [HttpGet("userPerRoom/{id}")]
+        public IActionResult GetUserByRoom(string id)
+        {
+            return Ok(new Risposta()
+            {
+                Status = "Success",
+                Data = _service.GetUsersByRoom(new ObjectId(id))
+            }) ;
+        }
     }
 }

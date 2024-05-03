@@ -1,5 +1,5 @@
 <select class="form-select" aria-label="Default select example" [(ngModel)]="selected" >
   <option selected>Seleziona Utente</option>
-  <option *ngFor="let u of users">{{u.us}}</option>
+  <option *ngFor="let u of allUser">{{u.us}}</option>
 </select>
 <button type="button" (click)="addToChat()" class="btn btn-primary w-100 mt-2">Aggiungi</button>

@@ -90,5 +90,9 @@ namespace ChatApi.Services
             }
             return chatsDto;
         }
+        
+        public List<string>? GetUsersByRoom(ObjectId id) {
+            return _repo.GetUtentiByRoom(id);
+        }
     }
 }

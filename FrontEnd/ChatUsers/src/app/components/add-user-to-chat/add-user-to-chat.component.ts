@@ -11,26 +11,35 @@ import {log} from "@angular-devkit/build-angular/src/builders/ssr-dev-server";
   styleUrl: './add-user-to-chat.component.css'
 })
 export class AddUserToChatComponent {
-  users!:Utenti[]
+  allUser!:Utenti[];
   selected!: string;
+  roomId!:string
   constructor(private UtenteSvc:UtentiService, private rottaAttiva: ActivatedRoute, private ChatSvc:ChatService) {
   }
   ngOnInit(){
+    this.rottaAttiva.params.subscribe((p) => {
+      this.roomId = p['cd'];
+    });
     this.UtenteSvc.getAllUsers().subscribe(res=>{
-      this.users = res.data
-      console.log(this.users)
+      this.allUser = res.data;
     })
 
   }
 
-  addToChat() {
-    this.rottaAttiva.params.subscribe((p) => {
-      let identificativo = p['cd'];
-      console.log(identificativo, this.selected)
 
-      this.ChatSvc.InsertUserToChat(identificativo,this.selected).subscribe(res=>{
+  convertToString(lista:Utenti[]):string[]{
+    let listaus:string[]= [];
+    for (let i:number = 0; i<this.allUser.length;i++){
+      listaus.push(this.allUser[i].us!)
+    }
+    return listaus;
+  }
+
+  addToChat() {
+
+      this.ChatSvc.InsertUserToChat(this.roomId,this.selected).subscribe(res=>{
         console.log(res.data)
       })
-    });
+
   }
 }

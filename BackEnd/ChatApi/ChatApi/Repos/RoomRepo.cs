@@ -124,5 +124,13 @@ namespace ChatApi.Repos
         {
             throw new NotImplementedException();
         }
+
+        public List<string>? GetUtentiByRoom(ObjectId id) {
+            ChatRoom? c = GetRoom(id);
+            if(c != null)
+                return c.Users;
+            return null;
+        
+        }
     }
 }
