@@ -14,6 +14,8 @@ import {UtentiService} from "../../services/utenti.service";
 export class ChatComponent {
   chat: Chatroom | undefined;
   currentUser:string|undefined;
+  idChat!:string;
+  handleInterval:any;
   constructor(
     private chatSvc: ChatService,
     private router: Router,
@@ -32,9 +34,12 @@ export class ChatComponent {
 
     this.rottaAttiva.params.subscribe((p) => {
       let identificativo = p['cd'];
+      this.idChat = identificativo
       this.pippo(identificativo);
     });
-
+    this.handleInterval = setInterval(() => {
+      this.pippo(this.idChat);
+    }, 1000)
 
   }
   pippo(identificativo: string): void {
