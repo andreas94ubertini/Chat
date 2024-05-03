@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './components/login/login/login.component';
 import { FormsModule } from '@angular/forms';
-import { CommonModule } from '@angular/common';
+import {CommonModule, NgOptimizedImage} from '@angular/common';
 import { ChatComponent } from './components/chat/chat.component';
 import { ProfiloUtenteComponent } from './components/profilo-utente/profilo-utente.component';
 import { SendmessaggeComponent } from './components/sendmessagge/sendmessagge.component';
@@ -25,7 +25,7 @@ import { AddUserToChatComponent } from './components/add-user-to-chat/add-user-t
     CreateChatRoomComponent,
     AddUserToChatComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
+    imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule, NgOptimizedImage],
   providers: [],
   bootstrap: [AppComponent],
 })

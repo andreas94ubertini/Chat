@@ -66,8 +66,7 @@
               "RelativeToolTip": "ChatApi\\Repos\\UserRepo.cs",
               "ViewState": "AQIAACEAAAAAAAAAAAAowFUAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T16:17:50.726Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-03T16:17:50.726Z"
             },
             {
               "$type": "Document",
@@ -79,8 +78,7 @@
               "RelativeToolTip": "ChatApi\\DTO\\MessageDto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T11:46:59.278Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-03T11:46:59.278Z"
             },
             {
               "$type": "Document",
@@ -92,8 +90,7 @@
               "RelativeToolTip": "ChatApi\\Models\\Message.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T11:46:57.368Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-03T11:46:57.368Z"
             },
             {
               "$type": "Document",
@@ -105,8 +102,7 @@
               "RelativeToolTip": "ChatApi\\DTO\\ChatRoomDto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T11:45:58.659Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-03T11:45:58.659Z"
             },
             {
               "$type": "Document",
@@ -143,8 +139,7 @@
               "RelativeToolTip": "ChatApi\\Services\\UserService.cs",
               "ViewState": "AQIAAB4AAAAAAAAAAAAowCoAAABEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T10:12:57.818Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-03T10:12:57.818Z"
             },
             {
               "$type": "Document",
@@ -154,7 +149,7 @@
               "RelativeDocumentMoniker": "ChatApi\\Repos\\RoomRepo.cs",
               "ToolTip": "C:\\Users\\ubert\\Desktop\\Chat\\BackEnd\\ChatApi\\ChatApi\\Repos\\RoomRepo.cs",
               "RelativeToolTip": "ChatApi\\Repos\\RoomRepo.cs",
-              "ViewState": "AQIAADMAAAAAAAAAAAAewEMAAAAIAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEMAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-03T09:24:46.607Z",
               "EditorCaption": ""
@@ -169,8 +164,7 @@
               "RelativeToolTip": "ChatApi\\Services\\RoomService.cs",
               "ViewState": "AQIAABgAAAAAAAAAAAAowF4AAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T09:21:48.854Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-03T09:21:48.854Z"
             },
             {
               "$type": "Document",
@@ -182,8 +176,7 @@
               "RelativeToolTip": "ChatApi\\Controllers\\RoomController.cs",
               "ViewState": "AQIAACwAAAAAAAAAAAA9wDcAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T08:48:31.683Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-03T08:48:31.683Z"
             }
           ]
         }
