@@ -21,9 +21,10 @@ export class SendmessaggeComponent {
     });
   }
 
-  sendMessage(identificativo: string, messageContent: string) {
+  sendMessage() {
+
     this.messageService
-      .sendMessage(this.identificativo, messageContent)
+      .sendMessage(this.identificativo, this.messageContent)
       .subscribe(
         (response) => {
           console.log('Messaggio inviato con successo:', response);

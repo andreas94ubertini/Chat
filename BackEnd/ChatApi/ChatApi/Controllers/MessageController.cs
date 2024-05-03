@@ -1,4 +1,5 @@
-﻿using ChatApi.Models;
+﻿using ChatApi.Filter;
+using ChatApi.Models;
 using ChatApi.Services;
 using Microsoft.AspNetCore.Mvc;
 
@@ -17,11 +18,13 @@ namespace ChatApi.Controllers
         }
         #endregion
         [HttpPost("sendMessage/{roomID}")]
+        [AuthorizeUserType("USER")]
         public IActionResult InserisciMessaggio(Message m, string roomID)
         {
             try
             {
-                if (User.Claims.FirstOrDefault(x => x.Type == "Username")?.Value != null)
+                var us = User.Claims.FirstOrDefault(x => x.Type == "Username")?.Value;
+                if(us != null)
                 {
                     m.Sender = User.Claims.First(x => x.Type == "Username").Value;
                     m.RoomId = new MongoDB.Bson.ObjectId(roomID);

@@ -119,5 +119,10 @@ namespace ChatApi.Repos
             }
             return rooms;
         }
+
+        public bool Create(ChatRoom entity)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

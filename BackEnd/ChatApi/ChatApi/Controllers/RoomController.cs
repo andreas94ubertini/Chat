@@ -52,10 +52,11 @@ namespace ChatApi.Controllers
         {
             try
             {
+                if (_service.InsertUserIntoChatRoom(username, new ObjectId(id)))
                 return Ok(new Risposta()
                 {
-
-                })
+                    Status = "Success"
+                });
             }catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);

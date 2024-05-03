@@ -14,15 +14,20 @@ export class SendmessageService {
 
     // Headers
     const headers = new HttpHeaders({
-      'Content-Type': 'application/json',
+
     });
 
     // Body
     const body = JSON.stringify({
-      message: messageContent,
+      text: messageContent,
     });
+    let contenutoToken = localStorage.getItem('ilToken');
 
+    let headerCustom = new HttpHeaders({
+      'Content-Type': 'application/json',
+      Authorization: `Bearer ${contenutoToken}`
+    });
     // Effettua la richiesta POST
-    return this.http.post(url, body, { headers });
+    return this.http.post(url, body, { headers: headerCustom });
   }
 }
