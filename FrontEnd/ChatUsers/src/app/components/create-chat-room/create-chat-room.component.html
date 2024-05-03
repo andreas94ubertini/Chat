@@ -1,0 +1,33 @@
+<form class="mt-5">
+  <div data-mdb-input-init class="form-outline mb-4">
+    <input
+      [(ngModel)]="roN"
+      type="text"
+      id="form2Example1"
+      class="form-control text-white pt-4"
+      name="roN"
+    />
+    <label class="form-label text-white" for="form2Example1">Nome Chat Room</label>
+  </div>
+
+  <div data-mdb-input-init class="form-outline mb-4">
+    <input
+      [(ngModel)]="des"
+      type="text"
+      id="form2Example2"
+      class="form-control text-white pt-4"
+      name="des"
+    />
+    <label class="form-label text-white" for="form2Example2">Descrizione</label>
+  </div>
+
+  <button
+    data-mdb-ripple-init
+    type="button"
+    class="btn btn-primary btn-block mb-4"
+    (click)="create()"
+  >
+    Crea
+  </button>
+
+</form>

@@ -21,10 +21,12 @@ namespace ChatApi.Services
         #endregion
 
 
-        public bool Inserimento(ChatRoom objDto, string username)
+        public bool Inserimento(ChatRoomDto objDto, string username)
         {
-
-            return _repo.Create(objDto, username);
+            ChatRoom c = new ChatRoom();
+            c.Description = objDto.Des;
+            c.RoomName = objDto.RoN;
+            return _repo.Create(c, username);
         }
         private List<MessageDto>? ConvertMsgToDto(List<Message>? messages)
         {

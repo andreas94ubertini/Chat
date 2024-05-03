@@ -1,4 +1,6 @@
-﻿using ChatApi.Models;
+﻿using ChatApi.DTO;
+using ChatApi.Filter;
+using ChatApi.Models;
 using ChatApi.Repos;
 using ChatApi.Services;
 using Microsoft.AspNetCore.Mvc;
@@ -19,7 +21,9 @@ namespace ChatApi.Controllers
         }
         #endregion
         [HttpPost]
-        public IActionResult NewChatRoom(ChatRoom newRoom)
+        [AuthorizeUserType("USER")]
+
+        public IActionResult NewChatRoom(ChatRoomDto newRoom)
         {
             try
             {

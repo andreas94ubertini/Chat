@@ -11,6 +11,7 @@ import { ChatComponent } from './components/chat/chat.component';
 import { ProfiloUtenteComponent } from './components/profilo-utente/profilo-utente.component';
 import { SendmessaggeComponent } from './components/sendmessagge/sendmessagge.component';
 import { RegisterComponent } from './components/register/register.component';
+import { CreateChatRoomComponent } from './components/create-chat-room/create-chat-room.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { RegisterComponent } from './components/register/register.component';
     ProfiloUtenteComponent,
     SendmessaggeComponent,
     RegisterComponent,
+    CreateChatRoomComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [],
