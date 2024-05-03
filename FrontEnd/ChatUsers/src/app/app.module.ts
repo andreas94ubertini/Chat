@@ -9,9 +9,10 @@ import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { ChatComponent } from './components/chat/chat.component';
 import {ProfiloUtenteComponent} from "./components/profilo-utente/profilo-utente.component";
+import { SendmessaggeComponent } from './components/sendmessagge/sendmessagge.component';
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent, ChatComponent, ProfiloUtenteComponent],
+  declarations: [AppComponent, LoginComponent, ChatComponent, ProfiloUtenteComponent, SendmessaggeComponent],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
