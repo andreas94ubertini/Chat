@@ -1,5 +1,5 @@
-/* You can add global styles to this file, and also import other style files */
-.glass{
+You can add global styles to this file,
+and also import other style files .glass {
   backdrop-filter: blur(30px);
-  background: hsla(0,0%,100%,0.55);
+  background: hsla(0, 0%, 100%, 0.55);
 }

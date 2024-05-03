@@ -8,11 +8,19 @@ import { LoginComponent } from './components/login/login/login.component';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { ChatComponent } from './components/chat/chat.component';
-import {ProfiloUtenteComponent} from "./components/profilo-utente/profilo-utente.component";
+import { ProfiloUtenteComponent } from './components/profilo-utente/profilo-utente.component';
 import { SendmessaggeComponent } from './components/sendmessagge/sendmessagge.component';
+import { RegisterComponent } from './components/register/register.component';
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent, ChatComponent, ProfiloUtenteComponent, SendmessaggeComponent],
+  declarations: [
+    AppComponent,
+    LoginComponent,
+    ChatComponent,
+    ProfiloUtenteComponent,
+    SendmessaggeComponent,
+    RegisterComponent,
+  ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
