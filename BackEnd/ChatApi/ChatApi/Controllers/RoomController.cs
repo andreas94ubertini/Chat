@@ -21,10 +21,19 @@ namespace ChatApi.Controllers
         [HttpPost]
         public IActionResult NewChatRoom(ChatRoom newRoom)
         {
+            try
+            {
+                if (User.Claims.FirstOrDefault(x => x.Type == "Username")?.Value != null)
+                {
+                    string username = User.Claims.First(x => x.Type == "Username").Value;
+                    if (_service.Inserimento(newRoom, username))
+                        return Ok(new Risposta() { Status = "SUCCESS" });
+                }
+            }catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
 
-                if (_service.Inserimento(newRoom))
-                    return Ok(new Risposta() { Status = "SUCCESS" });
-            
             return BadRequest();
         }
 
