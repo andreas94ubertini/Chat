@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 import { ChatService } from '../../services/chat.service';
 import { Chatroom } from '../../models/chatroom';
 import { ActivatedRoute, Router } from '@angular/router';
-import {AuthserviceService} from "../../services/authservice.service";
-import {Utenti} from "../../models/utenti";
-import {UtentiService} from "../../services/utenti.service";
-import {formatDate} from "@angular/common";
+import { AuthserviceService } from '../../services/authservice.service';
+import { Utenti } from '../../models/utenti';
+import { UtentiService } from '../../services/utenti.service';
+import { formatDate } from '@angular/common';
 
 @Component({
   selector: 'app-chat',
@@ -14,35 +14,31 @@ import {formatDate} from "@angular/common";
 })
 export class ChatComponent {
   chat: Chatroom | undefined;
-  currentUser:string|undefined;
-  idChat!:string;
-  handleInterval:any;
+  currentUser: string | undefined;
+  idChat!: string;
+  handleInterval: any;
   showOptions: boolean = false;
   constructor(
     private chatSvc: ChatService,
     private router: Router,
     private rottaAttiva: ActivatedRoute,
-    private UtentiSvc:UtentiService
+    private UtentiSvc: UtentiService
   ) {
-
-    this.UtentiSvc.recuperaProfilo().subscribe(res=>{
-      this.currentUser=res.data.us;
-      console.log(this.currentUser)
-    })
-
+    this.UtentiSvc.recuperaProfilo().subscribe((res) => {
+      this.currentUser = res.data.us;
+      console.log(this.currentUser);
+    });
   }
 
   ngOnInit(): void {
-
     this.rottaAttiva.params.subscribe((p) => {
       let identificativo = p['cd'];
-      this.idChat = identificativo
+      this.idChat = identificativo;
       this.pippo(identificativo);
     });
     this.handleInterval = setInterval(() => {
       this.pippo(this.idChat);
-    }, 1000)
-
+    }, 1000);
   }
   ngOnDestroy(): void {
     clearInterval(this.handleInterval);
@@ -55,7 +51,7 @@ export class ChatComponent {
   }
 
   addtrigger() {
-      this.showOptions = !this.showOptions
+    this.showOptions = !this.showOptions;
   }
 
   protected readonly formatDate = formatDate;

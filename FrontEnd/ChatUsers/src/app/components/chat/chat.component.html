@@ -1,138 +1,268 @@
-<main class="content">
+<!-- <main class="content">
   <div class="container p-0">
     <div class="card glass" *ngIf="chat">
-      <div class="row g-0">
-        <div class="col-12 col-lg-3 col-xl-3 border-right">
-          <div class="px-4 d-none d-md-block">
-            <div class="d-flex flex-row align-items-center gap-2">
-            <h3 class="text-center mt-2 ">Utenti</h3>
-              <button *ngIf="chat.roN != 'Master Room'" class="btn btn-primary" (click)="addtrigger()">Aggiungi Utente</button>
+      <div class="card-header bg-primary text-white">
+        <h3 class="card-title">Chat</h3>
+        <button
+          *ngIf="chat.roN != 'Master Room'"
+          class="btn btn-light"
+          (click)="addtrigger()"
+        >
+          Aggiungi Utente
+        </button>
+      </div>
+
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="list-group">
+              <a
+                href="#"
+                class="list-group-item list-group-item-action border-0"
+                *ngFor="let user of chat.use"
+              >
+                {{ user }}
+              </a>
             </div>
-            <div *ngIf="showOptions"><app-add-user-to-chat></app-add-user-to-chat></div>
-            <a
-              href="#"
-              class="list-group-item list-group-item-action border-0"
-              *ngFor="let user of chat.use"
-            >
-              {{ user }}
-              <div class="d-flex align-items-start">
-                <div class="flex-grow-1 ml-3"></div>
-              </div>
-            </a>
           </div>
 
-          <hr class="d-block d-lg-none mt-1 mb-0" />
-        </div>
-        <div class="col-12 col-lg-7 col-xl-9">
-          <div class="py-2 px-4 border-bottom d-none d-lg-block">
-            <div class="d-flex align-items-center py-1">
-              <div class="position-relative"></div>
-              <div class="flex-grow-1 pl-3">
-                <strong>{{ chat.roN }}</strong>
+          <div class="col-md-9">
+            <div class="chat-messages">
+              <div
+                *ngFor="let message of chat.messages"
+                [ngClass]="
+                  currentUser == message.sen
+                    ? 'd-flex justify-content-end chat-messages p-4'
+                    : 'chat-messages p-4'
+                "
+              >
+                <div class="chat-message-right pb-4">
+                  <div>
+                    <img
+                      src="https://bootdey.com/img/Content/avatar/avatar1.png"
+                      class="rounded-circle mr-1"
+                      alt="Chris Wood"
+                      width="40"
+                      height="40"
+                    />
+                    <div class="font-weight-bold mb-1">
+                      {{ message.sen }}
+                    </div>
+                    <div class="text-muted small text-nowrap mt-2">
+                      {{ message.dat | date : "dd/MM/yyyy" }}
+                    </div>
+                  </div>
+                  <div class="flex-shrink-1 bg-light rounded py-2 px-3 mr-3">
+                    {{ message.tex }}
+                  </div>
+                </div>
               </div>
-              <div class="flex-grow-1 pl-3">
-                <strong>{{ chat.des }}</strong>
-              </div>
-              <div>
-                <button class="btn btn-primary btn-lg mr-1 px-3">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="feather feather-phone feather-lg"
-                  >
-                    <path
-                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
-                    ></path>
-                  </svg>
-                </button>
-                <button
-                  class="btn btn-info btn-lg mr-1 px-3 d-none d-md-inline-block"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="feather feather-video feather-lg"
-                  >
-                    <polygon points="23 7 16 12 23 17 23 7"></polygon>
-                    <rect
-                      x="1"
-                      y="5"
-                      width="15"
-                      height="14"
-                      rx="2"
-                      ry="2"
-                    ></rect>
-                  </svg>
-                </button>
-                <button class="btn btn-light border btn-lg px-3">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="feather feather-more-horizontal feather-lg"
-                  >
-                    <circle cx="12" cy="12" r="1"></circle>
-                    <circle cx="19" cy="12" r="1"></circle>
-                    <circle cx="5" cy="12" r="1"></circle>
-                  </svg>
-                </button>
-              </div>
+            </div>
+            {{ message.tex }}
+            <div class="send-message-area">
+              <app-sendmessagge></app-sendmessagge>
             </div>
           </div>
-          <div class="position-relative">
-            <div
-              *ngFor="let message of chat.messages"
-              [ngClass]="
-                currentUser == message.sen
-                  ? 'd-flex justify-content-end chat-messages p-4'
-                  : 'chat-messages p-4'
-              "
-            >
-              <div class="chat-message-right pb-4">
-                <div>
-                  <img
-                    src="https://bootdey.com/img/Content/avatar/avatar1.png"
-                    class="rounded-circle mr-1"
-                    alt="Chris Wood"
-                    width="40"
-                    height="40"
-                  />
-                  <div class="font-weight-bold mb-1">
-                    {{ message.sen}}
-                  </div>
-                  <div class="text-muted small text-nowrap mt-2">
-                    {{message.dat | date: 'dd/MM/yyyy'}}
+        </div>
+      </div>
+    </div>
+  </div> 
+</main>-->
+
+<!-- <section style="background-color: #cdc4f9" *ngIf="chat">
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card" id="chat3" style="border-radius: 15px">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-6 col-lg-5 col-xl-4 mb-4 mb-md-0">
+                <div class="p-3">
+                  <div
+                    data-mdb-perfect-scrollbar="true"
+                    style="position: relative; height: 400px"
+                  >
+                    <ul class="list-unstyled mb-0">
+                      <li
+                        class="p-2 border-bottom"
+                        *ngFor="let user of chat.use"
+                      >
+                        <a href="#!" class="d-flex justify-content-between">
+                          <div class="d-flex flex-row">
+                            <div class="pt-1">
+                              <p class="fw-bold mb-0">Marie Horwitz</p>
+                              <p class="small text-muted">
+                                Hello, Are you there?
+                              </p>
+                            </div>
+                          </div>
+                          <div class="pt-1">
+                            <p class="small text-muted mb-1">Just now</p>
+                            <span class="badge bg-danger rounded-pill float-end"
+                              >3</span
+                            >
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
                   </div>
                 </div>
-                <div class="flex-shrink-1 bg-light rounded py-2 px-3 mr-3">
-                  {{ message.tex }}
+              </div>
+
+              <div class="col-md-6 col-lg-7 col-xl-8">
+                <div
+                  class="pt-3 pe-3"
+                  data-mdb-perfect-scrollbar="true"
+                  style="position: relative; height: 400px"
+                >
+                  <div
+                    class="d-flex flex-row justify-content-start"
+                    *ngFor="let message of chat.messages"
+                    [ngClass]="
+                      currentUser == message.sen
+                        ? 'd-flex justify-content-end  chat-messages p-4'
+                        : 'chat-messages p-4'
+                    "
+                  >
+                    <div>
+                      <p>{{ message.sen }}</p>
+                      <p
+                        class="small p-2 ms-3 mb-1 rounded-3"
+                        [ngClass]="
+                          currentUser == message.sen ? 'bg-primary' : 'bg-white'
+                        "
+                      >
+                        {{ message.tex }}
+                      </p>
+                      <p class="small ms-3 mb-3 rounded-3 text-muted float-end">
+                        {{ message.dat | date : "dd/MM/yyyy" }}
+                      </p>
+                    </div>
+                  </div>
+                  <app-sendmessagge></app-sendmessagge>
                 </div>
               </div>
             </div>
-            <app-sendmessagge></app-sendmessagge>
           </div>
         </div>
       </div>
     </div>
   </div>
-</main>
+</section> -->
+
+<div class="container bootstrap snippets bootdey" *ngIf="chat">
+  <div class="tile tile-alt" id="messages-main">
+    <div class="ms-menu">
+      <div class="list-group lg-alt">
+        <a class="list-group-item media" href="" *ngFor="let user of chat.use">
+          <div class="pull-left">
+            <img
+              src="https://bootdey.com/img/Content/avatar/avatar4.png"
+              alt=""
+              class="img-avatar"
+            />
+          </div>
+          <div class="media-body">
+            <div class="list-group-item-heading">{{ user }}</div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="ms-body">
+      <div class="action-header clearfix">
+        <div class="visible-xs" id="ms-menu-trigger">
+          <i class="fa fa-bars"></i>
+        </div>
+
+        <ul class="ah-actions actions">
+          <li>
+            <button
+              *ngIf="chat.roN != 'Master Room'"
+              class="btn btn-light"
+              (click)="addtrigger()"
+            >
+              Aggiungi Utente
+            </button>
+          </li>
+          <li>
+            <a href="">
+              <i class="fa fa-trash"></i>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="fa fa-check"></i>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="fa fa-clock-o"></i>
+            </a>
+          </li>
+          <li class="dropdown">
+            <a href="" data-toggle="dropdown" aria-expanded="true">
+              <i class="fa fa-sort"></i>
+            </a>
+
+            <ul class="dropdown-menu dropdown-menu-right">
+              <li>
+                <a href="">Latest</a>
+              </li>
+              <li>
+                <a href="">Oldest</a>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="" data-toggle="dropdown" aria-expanded="true">
+              <i class="fa fa-bars"></i>
+            </a>
+
+            <ul class="dropdown-menu dropdown-menu-right">
+              <li>
+                <a href="">Refresh</a>
+              </li>
+              <li>
+                <a href="">Message Settings</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div
+        [ngClass]="
+          currentUser == message.sen
+            ? 'message-feed right'
+            : 'message-feed media'
+        "
+        class="message-feed media"
+        *ngFor="let message of chat.messages"
+      >
+        <div
+          [ngClass]="currentUser == message.sen ? 'pull-right' : 'pull-left'"
+        >
+          <img
+            src="https://bootdey.com/img/Content/avatar/avatar1.png"
+            alt=""
+            class="img-avatar"
+          />
+        </div>
+        <div class="media-body">
+          <div class="mf-content rounded-pill">
+            {{ message.tex }}
+          </div>
+          <small class="mf-date"
+            ><i class="fa fa-clock-o"></i>
+            {{ message.dat | date : "dd/MM/yyyy" }}</small
+          >
+        </div>
+      </div>
+
+      <div class="msb-reply">
+        <app-sendmessagge></app-sendmessagge>
+      </div>
+    </div>
+  </div>
+</div>
