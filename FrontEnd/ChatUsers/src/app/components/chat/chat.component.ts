@@ -43,6 +43,9 @@ export class ChatComponent {
     }, 1000)
 
   }
+  ngOnDestroy(): void {
+    clearInterval(this.handleInterval);     
+  }
   pippo(identificativo: string): void {
     this.chatSvc.recuperaRoom(identificativo).subscribe((res) => {
       this.chat = res.data;
