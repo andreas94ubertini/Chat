@@ -2,7 +2,7 @@
   <div class="container p-0">
     <div class="card glass" *ngIf="chat">
       <div class="row g-0">
-        <div class="col-12 col-lg-5 col-xl-3 border-right">
+        <div class="col-12 col-lg-3 col-xl-3 border-right">
           <div class="px-4 d-none d-md-block">
             <div class="d-flex flex-row align-items-center gap-2">
             <h3 class="text-center mt-2 ">Utenti</h3>
@@ -118,10 +118,10 @@
                     height="40"
                   />
                   <div class="font-weight-bold mb-1">
-                    {{ message.sen }}
+                    {{ message.sen}}
                   </div>
                   <div class="text-muted small text-nowrap mt-2">
-                    {{ message.dat }}
+                    {{message.dat | date: 'dd/MM/yyyy'}}
                   </div>
                 </div>
                 <div class="flex-shrink-1 bg-light rounded py-2 px-3 mr-3">

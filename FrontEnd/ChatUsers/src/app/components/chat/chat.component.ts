@@ -5,6 +5,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import {AuthserviceService} from "../../services/authservice.service";
 import {Utenti} from "../../models/utenti";
 import {UtentiService} from "../../services/utenti.service";
+import {formatDate} from "@angular/common";
 
 @Component({
   selector: 'app-chat',
@@ -44,7 +45,7 @@ export class ChatComponent {
 
   }
   ngOnDestroy(): void {
-    clearInterval(this.handleInterval);     
+    clearInterval(this.handleInterval);
   }
   pippo(identificativo: string): void {
     this.chatSvc.recuperaRoom(identificativo).subscribe((res) => {
@@ -56,4 +57,6 @@ export class ChatComponent {
   addtrigger() {
       this.showOptions = !this.showOptions
   }
+
+  protected readonly formatDate = formatDate;
 }

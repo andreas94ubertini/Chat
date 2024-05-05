@@ -62,8 +62,7 @@
               "RelativeToolTip": "ChatApi\\Repos\\UserRepo.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAFUAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T16:17:50.726Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-03T16:17:50.726Z"
             },
             {
               "$type": "Document",
@@ -124,8 +123,7 @@
               "RelativeToolTip": "ChatApi\\Controllers\\UtentiController.cs",
               "ViewState": "AQIAAD0AAAAAAAAAAAAawC8AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T10:13:26.957Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-03T10:13:26.957Z"
             },
             {
               "$type": "Document",
@@ -137,8 +135,7 @@
               "RelativeToolTip": "ChatApi\\Services\\UserService.cs",
               "ViewState": "AQIAAAgAAAAAAAAAAAAxwEMAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T10:12:57.818Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-03T10:12:57.818Z"
             },
             {
               "$type": "Document",
@@ -160,7 +157,7 @@
               "RelativeDocumentMoniker": "ChatApi\\Controllers\\RoomController.cs",
               "ToolTip": "C:\\Users\\ubert\\Desktop\\Chat\\BackEnd\\ChatApi\\ChatApi\\Controllers\\RoomController.cs",
               "RelativeToolTip": "ChatApi\\Controllers\\RoomController.cs",
-              "ViewState": "AQIAADwAAAAAAAAAAAAIwDcAAAAIAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADcAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-03T08:48:31.683Z",
               "EditorCaption": ""
