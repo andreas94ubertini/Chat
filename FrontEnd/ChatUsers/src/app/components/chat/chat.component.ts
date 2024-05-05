@@ -6,6 +6,7 @@ import {AuthserviceService} from "../../services/authservice.service";
 import {Utenti} from "../../models/utenti";
 import {UtentiService} from "../../services/utenti.service";
 import {formatDate} from "@angular/common";
+import {MessaggeService} from "../../services/message.service";
 
 @Component({
   selector: 'app-chat',
@@ -22,7 +23,8 @@ export class ChatComponent {
     private chatSvc: ChatService,
     private router: Router,
     private rottaAttiva: ActivatedRoute,
-    private UtentiSvc:UtentiService
+    private UtentiSvc:UtentiService,
+    private MessageSvc: MessaggeService
   ) {
 
     this.UtentiSvc.recuperaProfilo().subscribe(res=>{
@@ -59,4 +61,10 @@ export class ChatComponent {
   }
 
   protected readonly formatDate = formatDate;
+
+  delete(messageId:string) {
+    this.MessageSvc.deleteMessage(messageId).subscribe(res=>{
+      console.log(res.status)
+    })
+  }
 }

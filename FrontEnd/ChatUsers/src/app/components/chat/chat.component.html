@@ -118,13 +118,20 @@
                     height="40"
                   />
                   <div class="font-weight-bold mb-1">
-                    {{ message.sen}}
+                   <p>
+                      {{ message.sen}}
+                     <button *ngIf="message.sen == currentUser" class="btn btn-danger btn-sm" (click)="delete(message.idM!)">
+                     <i class="fa-regular fa-circle-xmark"></i>
+                     </button>
+                   </p>
                   </div>
                   <div class="text-muted small text-nowrap mt-2">
                     {{message.dat | date: 'dd/MM/yyyy'}}
+
                   </div>
                 </div>
                 <div class="flex-shrink-1 bg-light rounded py-2 px-3 mr-3">
+
                   {{ message.tex }}
                 </div>
               </div>

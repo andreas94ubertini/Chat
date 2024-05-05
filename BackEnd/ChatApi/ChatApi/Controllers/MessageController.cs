@@ -38,5 +38,27 @@ namespace ChatApi.Controllers
             }
             return BadRequest();
         }
+
+        [HttpDelete("eliminaMessaggio/{id}")]
+        [AuthorizeUserType("USER")]
+        public IActionResult DeleteMessage(string id)
+        {
+            try
+            {
+                var us = User.Claims.FirstOrDefault(x => x.Type == "Username")?.Value;
+                if (us != null)
+                {
+                    if (_service.DeleteMessage(new MongoDB.Bson.ObjectId(id), us))
+                        return Ok(new Risposta() { Status = "SUCCESS" });
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+
+            }
+            return BadRequest();
+        }
+
     }
 }

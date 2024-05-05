@@ -25,7 +25,8 @@ namespace ChatApi.Repos
         }
         #endregion
 
-        public bool InsertMessage(Message message) {
+        public bool InsertMessage(Message message)
+        {
             try
             {
                 Message.InsertOne(message);
@@ -44,6 +45,33 @@ namespace ChatApi.Repos
         {
             var filter = Builders<Message>.Filter.Eq(m => m.RoomId, roomId);
             return Message.Find(filter).ToList();
+        }
+        public Message? GetOneMessage(ObjectId messageId) {
+            var filter = Builders<Message>.Filter.Eq(m => m.IdMessage, messageId);
+            try
+            {
+                return Message.Find(filter).ToList()[0];
+                
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex.Message);
+            }
+            return null;
+        }
+        public bool DeleteMessage(ObjectId messageId)
+        {
+            var filter = Builders<Message>.Filter.Eq(m => m.IdMessage, messageId);
+            try
+            {
+                Message.DeleteOne(filter);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex.Message);
+            }
+            return false;
         }
     }
 }

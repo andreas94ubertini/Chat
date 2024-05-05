@@ -1,5 +1,5 @@
 export class Message {
-  idm: string | undefined;
+  idM: string | undefined;
   tex: string | undefined;
   dat: Date | undefined;
   sen: string | undefined;
