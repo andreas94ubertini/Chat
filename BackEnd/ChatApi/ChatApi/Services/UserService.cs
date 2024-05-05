@@ -61,20 +61,14 @@ namespace ChatApi.Services
             return null;
         }
 
-        public List<UtentiDto>? GetAllUtenti()
+        public List<string>? GetAllUtenti()
         {
-            List<UtentiDto> utentiDtos = new List<UtentiDto>();
+            List<string> utentiUsername = new List<string>();
             foreach(Utenti u in _repo.GetAll())
             {
-                UtentiDto objDto = new UtentiDto()
-                {
-                    Us = u.Username,
-                    Ps = u.Psw,
-                    PI = u.ProfileImg,
-                };
-                utentiDtos.Add(objDto);
+                utentiUsername.Add(u.Username);
             }
-            return utentiDtos;
+            return utentiUsername;
         }
     }
 }
