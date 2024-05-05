@@ -1,0 +1,10 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\ChatApi",
+    "\\ChatApi\\ChatApi",
+    "\\ChatApi\\ChatApi\\Controllers"
+  ],
+  "SelectedNode": "\\ChatApi\\ChatApi\\Controllers\\RoomController.cs",
+  "PreviewInSolutionExplorer": false
+}
