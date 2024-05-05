@@ -70,5 +70,16 @@ namespace ChatApi.Services
             }
             return utentiUsername;
         }
+
+        public bool UpdateProfileImg(UtentiDto objDto)
+        {
+            Utenti? u = _repo.GetByUsername(objDto.Us);
+            if (u != null)
+            {
+                u.ProfileImg = objDto.PI;
+                return _repo.Update(u);
+            }
+            return false;
+        }
     }
 }
