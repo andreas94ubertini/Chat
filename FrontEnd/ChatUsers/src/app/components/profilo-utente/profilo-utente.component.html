@@ -4,8 +4,8 @@
       <div class="card p-3 py-4 glass">
         <div class="text-center">
           <img
-
-            [src]="'./assets/profileImgs/' + user?.pI"
+            (click)="show()"
+            [src]="'./assets/profileImgs/' + user?.pi"
 
             loading="eager"
             class="rounded-circle mr-1"
@@ -19,9 +19,8 @@
           <span class="bg-secondary p-1 px-4 rounded text-white">User</span>
           <h5 class="mt-2 mb-0">{{ user?.us }}</h5>
           <!--          <h5 class="mt-2 mb-0">{{user?.us}}</h5>-->
-        <div class="d-flex flex-column">
-          <div class="d-flex flex-row justify-content-center">
-            <form class="form-check form-check-inline d-flex flex-column align-items-center " [(ngModel)]="img" name="selezionaImg" ngDefaultControl>
+        <div class="d-flex flex-column align-items-center gap-2" *ngIf="showOpts">
+            <form class="form-check form-check-inline d-flex flex-row align-items-center " [(ngModel)]="img" name="selezionaImg" ngDefaultControl>
               <img src="./assets/profileImgs/smile.svg" class="d-block" width="80px">
               <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="smile.svg" />
               <img src="./assets/profileImgs/femaleOne.svg" class="d-block" width="80px">
@@ -35,7 +34,6 @@
               <img src="./assets/profileImgs/monkey.svg" class="d-block" width="80px">
               <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio6" value="monkey.svg" />
             </form>
-          </div>
           <div>
             <button class="btn btn-success" (click)="changeImg()">Salva</button>
           </div>

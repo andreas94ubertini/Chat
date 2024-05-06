@@ -9,7 +9,7 @@ import { Risposta } from '../models/risposta';
 export class SendmessageService {
   constructor(private http: HttpClient) {}
 
-  sendMessage(id: string, messageContent: string) {
+  sendMessage(id: string, messageContent: string, img:string) {
     const url = `http://localhost:5297/Message/sendMessage/${id}`;
 
     // Headers
@@ -20,6 +20,7 @@ export class SendmessageService {
     // Body
     const body = JSON.stringify({
       text: messageContent,
+      img: img
     });
     let contenutoToken = localStorage.getItem('ilToken');
 

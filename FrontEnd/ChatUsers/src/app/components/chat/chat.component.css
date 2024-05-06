@@ -107,7 +107,8 @@ body {
     0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
 .message-feed.right .mf-content {
-  background: #eee;
+  background: #029ee5;
+  color: #fff;
 }
 .mf-content {
   padding: 12px 17px 13px;

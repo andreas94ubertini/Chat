@@ -41,6 +41,7 @@ namespace ChatApi.Services
                         Tex = m.Text,
                         Dat = m.DataInvio,
                         Sen = m.Sender,
+                        Img = m.Img,
                         RoI = m.RoomId.ToString(),
 
                     };

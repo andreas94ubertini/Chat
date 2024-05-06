@@ -12,6 +12,7 @@ namespace ChatApi.DTO
         public DateTime Dat { get; set; }
 
         public string? Sen { get; set; }
+        public string? Img { get; set; }
 
         public string? RoI { get; set; }
     }

@@ -18,7 +18,9 @@ namespace ChatApi.Models
 
         [BsonElement("sender")]
         public string? Sender { get; set; }
-        
+        [BsonElement("img")]
+        public string? Img { get; set; }
+
         [BsonRepresentation(BsonType.ObjectId)]
         public ObjectId RoomId { get; set;}
 

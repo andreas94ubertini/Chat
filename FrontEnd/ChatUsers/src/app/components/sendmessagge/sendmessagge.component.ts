@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { SendmessageService } from '../../services/sendmessage.service';
 import { ActivatedRoute, Router } from '@angular/router';
+import {UtentiService} from "../../services/utenti.service";
+import {Utenti} from "../../models/utenti";
 
 @Component({
   selector: 'app-sendmessagge',
@@ -10,21 +12,26 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class SendmessaggeComponent {
   messageContent: string = '';
   identificativo!: string;
+  currentUser!:Utenti;
   constructor(
     private messageService: SendmessageService,
     private router: Router,
-    private rottaAttiva: ActivatedRoute
+    private rottaAttiva: ActivatedRoute,
+    private UtenteSvc : UtentiService
   ) {}
   ngOnInit(): void {
     this.rottaAttiva.params.subscribe((p) => {
       this.identificativo = p['cd'];
     });
+    this.UtenteSvc.recuperaProfilo().subscribe(res=>{
+      this.currentUser = res.data;
+    })
   }
 
   sendMessage() {
 
     this.messageService
-      .sendMessage(this.identificativo, this.messageContent)
+      .sendMessage(this.identificativo, this.messageContent, this.currentUser.pi!)
       .subscribe(
         (response) => {
           console.log('Messaggio inviato con successo:', response);

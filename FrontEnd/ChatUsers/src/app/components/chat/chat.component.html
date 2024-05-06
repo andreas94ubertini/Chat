@@ -1,8 +1,10 @@
 
 <div class="container bootstrap snippets bootdey mt-5" *ngIf="chat">
-  <div class="tile tile-alt" id="messages-main">
-    <div class="ms-menu">
+  <div class="row">
+    <div class="tile tile-alt" id="messages-main">
+      <div class="ms-menu">
       <div class="list-group lg-alt">
+        <h2 class="text-center">Utenti</h2>
         <div
           class="list-group-item media"
           href=""
@@ -23,8 +25,7 @@
         </div>
       </div>
     </div>
-
-    <div class="ms-body">
+      <div class="ms-body">
       <div class="action-header clearfix">
         <div class="visible-xs" id="ms-menu-trigger">
           <i class="fa fa-bars"></i>
@@ -57,9 +58,10 @@
         *ngFor="let message of chat.messages"
       >
         <div
-          [ngClass]="currentUser == message.sen ? 'pull-right ' : 'pull-left'"
+          [ngClass]="currentUser == message.sen ? 'pull-right' : 'pull-left'"
         >
-          <img src="./assets/profileImgs/smile.svg" alt="" class="img-avatar" />
+          <img src="./assets/profileImgs/{{message.img}}" alt="" class="img-avatar" />
+          <span class="fw-bold mx-1">{{message.sen}}</span>
         </div>
         <div class="media-body">
           <div class="mf-content rounded">
@@ -83,6 +85,7 @@
       <div class="msb-reply">
         <app-sendmessagge></app-sendmessagge>
       </div>
+    </div>
     </div>
   </div>
 </div>

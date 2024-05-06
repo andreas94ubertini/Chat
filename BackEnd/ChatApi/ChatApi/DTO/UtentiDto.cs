@@ -8,7 +8,7 @@ namespace ChatApi.DTO
 
         public string Ps { get; set; } = null!;
 
-        public string? PI{ get; set; }
+        public string? Pi { get; set; }
 
         public List<ChatRoomDto>? MyChats { get; set; }
     }

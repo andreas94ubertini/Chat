@@ -3,6 +3,7 @@ using ChatApi.Models;
 using ChatApi.Repos;
 using MongoDB.Bson;
 using System.Runtime.CompilerServices;
+using System.Xml.Schema;
 
 namespace ChatApi.Services
 {
@@ -27,7 +28,8 @@ namespace ChatApi.Services
                 Utenti u = new Utenti()
                 {
                     Username = newUser.Us,
-                    Psw = newUser.Ps
+                    Psw = newUser.Ps,
+                    ProfileImg = "smile.svg"
                 };
                 _roomService.InsertUserIntoChatRoom(newUser.Us, new ObjectId("6632374d4a7668546ed7237e"));
                 return _repo.Create(u);
@@ -51,7 +53,7 @@ namespace ChatApi.Services
                 {
                     Us = u.Username,
                     Ps = u.Psw,
-                    PI = u.ProfileImg,
+                    Pi = u.ProfileImg,
                     MyChats = _roomService.GetRoomsByUser(username)
 
                 };
@@ -76,7 +78,7 @@ namespace ChatApi.Services
             Utenti? u = _repo.GetByUsername(objDto.Us);
             if (u != null)
             {
-                u.ProfileImg = objDto.PI;
+                u.ProfileImg = objDto.Pi;
                 return _repo.Update(u);
             }
             return false;

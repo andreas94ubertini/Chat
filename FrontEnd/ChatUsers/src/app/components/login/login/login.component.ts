@@ -11,7 +11,10 @@ export class LoginComponent {
   username: string = '';
   password: string = '';
 
-  constructor(private service: AuthserviceService, private router: Router) {}
+  constructor(private service: AuthserviceService, private router: Router) {
+    if(localStorage.getItem("ilToken"))
+      router.navigateByUrl("/profilo")
+  }
 
   verifica(): void {
     this.service.login(this.username, this.password).subscribe((risultato) => {

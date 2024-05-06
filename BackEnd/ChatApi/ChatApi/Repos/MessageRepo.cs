@@ -10,8 +10,9 @@ namespace ChatApi.Repos
         #region Injection
         private IMongoCollection<Message> Message;
         private readonly ILogger _logger;
+        private readonly UserRepo _userRepo;
 
-        public MessageRepo(IConfiguration configuration, ILogger<RoomRepo> logger)
+        public MessageRepo(IConfiguration configuration, ILogger<RoomRepo> logger, UserRepo userRepo)
         {
             this._logger = logger;
 
@@ -21,7 +22,7 @@ namespace ChatApi.Repos
             MongoClient client = new MongoClient(connessioneLocale);
             IMongoDatabase _database = client.GetDatabase(databaseName);
             this.Message = _database.GetCollection<Message>("Message");
-
+            _userRepo = userRepo;
         }
         #endregion
 
@@ -44,7 +45,19 @@ namespace ChatApi.Repos
         public List<Message> GetMessages(ObjectId roomId)
         {
             var filter = Builders<Message>.Filter.Eq(m => m.RoomId, roomId);
-            return Message.Find(filter).ToList();
+            List<Message> m = Message.Find(filter).ToList();
+            List<Utenti> u = _userRepo.GetAll().ToList();
+            foreach(Message ms in m)
+            {
+                foreach(Utenti ut in u)
+                {
+                    if(ms.Sender == ut.Username)
+                    {
+                        ms.Img = ut.ProfileImg;
+                    }
+                }
+            }
+            return m;
         }
         public Message? GetOneMessage(ObjectId messageId) {
             var filter = Builders<Message>.Filter.Eq(m => m.IdMessage, messageId);
