@@ -150,12 +150,16 @@
   </div>
 </section> -->
 
-<div class="container bootstrap snippets bootdey" *ngIf="chat">
+<div class="container bootstrap snippets bootdey mt-5" *ngIf="chat">
   <div class="tile tile-alt" id="messages-main">
     <div class="ms-menu">
       <div class="list-group lg-alt">
-        <a class="list-group-item media" href="" *ngFor="let user of chat.use">
-          <div class="pull-left">
+        <div
+          class="list-group-item media"
+          href=""
+          *ngFor="let user of chat.use"
+        >
+          <div class="text-center">
             <img
               src="https://bootdey.com/img/Content/avatar/avatar4.png"
               alt=""
@@ -163,9 +167,11 @@
             />
           </div>
           <div class="media-body">
-            <div class="list-group-item-heading">{{ user }}</div>
+            <div class="list-group-item-heading text-center fs-5">
+              {{ user }}
+            </div>
           </div>
-        </a>
+        </div>
       </div>
     </div>
 
@@ -177,58 +183,16 @@
 
         <ul class="ah-actions actions">
           <li>
-            <button
+            <i
               *ngIf="chat.roN != 'Master Room'"
-              class="btn btn-light"
               (click)="addtrigger()"
-            >
-              Aggiungi Utente
-            </button>
-          </li>
-          <li>
-            <a href="">
-              <i class="fa fa-trash"></i>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <i class="fa fa-check"></i>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <i class="fa fa-clock-o"></i>
-            </a>
-          </li>
-          <li class="dropdown">
-            <a href="" data-toggle="dropdown" aria-expanded="true">
-              <i class="fa fa-sort"></i>
-            </a>
-
-            <ul class="dropdown-menu dropdown-menu-right">
-              <li>
-                <a href="">Latest</a>
-              </li>
-              <li>
-                <a href="">Oldest</a>
-              </li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="" data-toggle="dropdown" aria-expanded="true">
-              <i class="fa fa-bars"></i>
-            </a>
-
-            <ul class="dropdown-menu dropdown-menu-right">
-              <li>
-                <a href="">Refresh</a>
-              </li>
-              <li>
-                <a href="">Message Settings</a>
-              </li>
-            </ul>
+              class="fa fa-plus"
+            ></i>
           </li>
         </ul>
+      </div>
+      <div *ngIf="showOptions">
+        <app-add-user-to-chat></app-add-user-to-chat>
       </div>
 
       <div
@@ -241,18 +205,22 @@
         *ngFor="let message of chat.messages"
       >
         <div
-          [ngClass]="currentUser == message.sen ? 'pull-right' : 'pull-left'"
+          [ngClass]="currentUser == message.sen ? 'pull-right ' : 'pull-left'"
         >
-          <img
-            src="https://bootdey.com/img/Content/avatar/avatar1.png"
-            alt=""
-            class="img-avatar"
-          />
+          <img src="./assets/profileImgs/smile.svg" alt="" class="img-avatar" />
         </div>
         <div class="media-body">
-          <div class="mf-content rounded-pill">
+          <div class="mf-content rounded">
             {{ message.tex }}
           </div>
+
+          <i
+            *ngIf="currentUser == message.sen"
+            (click)="delete(message.idM!)"
+            class="fa fa-trash comparsa ms-2"
+            aria-hidden="true"
+          ></i>
+
           <small class="mf-date"
             ><i class="fa fa-clock-o"></i>
             {{ message.dat | date : "dd/MM/yyyy" }}</small

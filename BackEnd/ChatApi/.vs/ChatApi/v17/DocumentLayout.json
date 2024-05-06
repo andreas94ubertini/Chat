@@ -83,8 +83,7 @@
               "RelativeToolTip": "ChatApi\\appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAACrAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-05-05T22:14:18.313Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-05T22:14:18.313Z"
             },
             {
               "$type": "Document",
@@ -96,8 +95,7 @@
               "RelativeToolTip": "ChatApi\\Repos\\UserRepo.cs",
               "ViewState": "AQIAAD8AAAAAAAAAAAAqwFcAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T16:17:50.726Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-03T16:17:50.726Z"
             },
             {
               "$type": "Document",
@@ -194,8 +192,7 @@
               "RelativeToolTip": "ChatApi\\Controllers\\RoomController.cs",
               "ViewState": "AQIAAAwAAAAAAAAAAAAAADcAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T08:48:31.683Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-03T08:48:31.683Z"
             }
           ]
         }
