@@ -2,8 +2,60 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a83ded57-689b-45bf-93e5-07689cf70e13" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../.vs/BackEnd/FileContentIndex/db48e36b-706f-4dd4-a7f8-acfd54bdc8f6.vsidx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.vs/BackEnd/v17/.wsuo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.vs/BackEnd/v17/DocumentLayout.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.vs/VSWorkspaceState.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.vs/slnx.sqlite" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/ChatApi/FileContentIndex/80cb8e6d-5a35-4386-be43-6db490abadbe.vsidx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChatApi/obj/Release/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChatApi/obj/Release/net8.0/ChatApi.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChatApi/obj/Release/net8.0/ChatApi.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChatApi/obj/Release/net8.0/ChatApi.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChatApi/obj/Release/net8.0/ChatApi.GlobalUsings.g.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChatApi/obj/Release/net8.0/ChatApi.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChatApi/obj/Release/net8.0/ChatApi.csproj.AssemblyReference.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../FrontEnd/ChatUsers/src/app/components/login/login/add-user-to-chat/add-user-to-chat.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ChatApi/DesignTimeBuild/.dtbcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ChatApi/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ChatApi/FileContentIndex/90cc5860-859a-4a7e-abb3-83bc697939e6.vsidx" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ChatApi/FileContentIndex/523fba6b-9d16-4283-9abe-eda654c91436.vsidx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ChatApi/v17/.futdcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ChatApi/v17/.futdcache.v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ChatApi/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ChatApi/v17/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ChatApi/v17/DocumentLayout.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ChatApi/v17/DocumentLayout.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/chatapi.metadata.v7.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ProjectEvaluation/chatapi.metadata.v7.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/chatapi.projects.v7.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ProjectEvaluation/chatapi.projects.v7.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApi/Models/ChatUsersContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChatApi/Models/ChatUsersContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApi/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ChatApi/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApi/bin/Debug/net8.0/ChatApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ChatApi/bin/Debug/net8.0/ChatApi.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApi/bin/Debug/net8.0/ChatApi.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ChatApi/bin/Debug/net8.0/ChatApi.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApi/bin/Debug/net8.0/ChatApi.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ChatApi/bin/Debug/net8.0/ChatApi.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApi/bin/Debug/net8.0/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ChatApi/bin/Debug/net8.0/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApi/obj/ChatApi.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ChatApi/obj/ChatApi.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApi/obj/ChatApi.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/ChatApi/obj/ChatApi.csproj.nuget.g.props" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApi/obj/Debug/net8.0/ChatApi.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChatApi/obj/Debug/net8.0/ChatApi.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApi/obj/Debug/net8.0/ChatApi.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ChatApi/obj/Debug/net8.0/ChatApi.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApi/obj/Debug/net8.0/ChatApi.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ChatApi/obj/Debug/net8.0/ChatApi.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApi/obj/Debug/net8.0/ChatApi.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ChatApi/obj/Debug/net8.0/ChatApi.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApi/obj/Debug/net8.0/ChatApi.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ChatApi/obj/Debug/net8.0/ChatApi.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApi/obj/Debug/net8.0/ChatApi.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ChatApi/obj/Debug/net8.0/ChatApi.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApi/obj/Debug/net8.0/ChatApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ChatApi/obj/Debug/net8.0/ChatApi.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApi/obj/Debug/net8.0/ChatApi.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ChatApi/obj/Debug/net8.0/ChatApi.genruntimeconfig.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApi/obj/Debug/net8.0/ChatApi.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ChatApi/obj/Debug/net8.0/ChatApi.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApi/obj/Debug/net8.0/ChatApi.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/ChatApi/obj/Debug/net8.0/ChatApi.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApi/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ChatApi/obj/Debug/net8.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApi/obj/Debug/net8.0/ref/ChatApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ChatApi/obj/Debug/net8.0/ref/ChatApi.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApi/obj/Debug/net8.0/refint/ChatApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ChatApi/obj/Debug/net8.0/refint/ChatApi.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApi/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/ChatApi/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApi/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ChatApi/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FrontEnd/ChatUsers/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../FrontEnd/ChatUsers/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FrontEnd/ChatUsers/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../FrontEnd/ChatUsers/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FrontEnd/ChatUsers/src/app/components/add-user-to-chat/add-user-to-chat.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../FrontEnd/ChatUsers/src/app/components/login/login/add-user-to-chat/add-user-to-chat.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FrontEnd/ChatUsers/src/app/components/add-user-to-chat/add-user-to-chat.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../FrontEnd/ChatUsers/src/app/components/login/login/add-user-to-chat/add-user-to-chat.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FrontEnd/ChatUsers/src/app/components/add-user-to-chat/add-user-to-chat.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../FrontEnd/ChatUsers/src/app/components/login/login/add-user-to-chat/add-user-to-chat.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FrontEnd/ChatUsers/src/app/components/add-user-to-chat/add-user-to-chat.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FrontEnd/ChatUsers/src/app/components/chat/chat.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../FrontEnd/ChatUsers/src/app/components/chat/chat.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FrontEnd/ChatUsers/src/app/components/chat/chat.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../FrontEnd/ChatUsers/src/app/components/chat/chat.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FrontEnd/ChatUsers/src/app/components/chat/chat.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../FrontEnd/ChatUsers/src/app/components/chat/chat.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FrontEnd/ChatUsers/src/app/components/sendmessagge/sendmessagge.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../FrontEnd/ChatUsers/src/app/components/sendmessagge/sendmessagge.component.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,22 +65,22 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "andreas94ubertini"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;andreas94ubertini&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/andreas94ubertini/Chat.git",
-    "accountId": "327ff942-f4ba-42c1-b84c-a152209263e4"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/andreas94ubertini/Chat.git&quot;,
+    &quot;accountId&quot;: &quot;327ff942-f4ba-42c1-b84c-a152209263e4&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 6
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2fuRSPvBixit0ikAdiNk1CLAfn2" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -37,7 +89,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "AndreasBranch",
+    "git-widget-placeholder": "Merging AndreasBranch",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   },
@@ -58,6 +110,7 @@
       <option name="presentableId" value="Default" />
       <updated>1714648977612</updated>
       <workItem from="1714648985578" duration="10000" />
+      <workItem from="1714993292405" duration="7000" />
     </task>
     <servers />
   </component>

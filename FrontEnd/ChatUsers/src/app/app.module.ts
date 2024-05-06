@@ -12,7 +12,7 @@ import { ProfiloUtenteComponent } from './components/profilo-utente/profilo-uten
 import { SendmessaggeComponent } from './components/sendmessagge/sendmessagge.component';
 import { RegisterComponent } from './components/register/register.component';
 import { CreateChatRoomComponent } from './components/create-chat-room/create-chat-room.component';
-import { AddUserToChatComponent } from './components/login/login/add-user-to-chat/add-user-to-chat.component';
+import { AddUserToChatComponent } from './components/add-user-to-chat/add-user-to-chat.component';
 
 @NgModule({
   declarations: [

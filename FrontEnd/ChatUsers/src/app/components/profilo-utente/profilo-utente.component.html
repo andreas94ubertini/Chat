@@ -4,7 +4,9 @@
       <div class="card p-3 py-4 glass">
         <div class="text-center">
           <img
-            ngSrc="./assets/profileImgs/{{localStorage.getItem('profileImg')}}"
+
+            [src]="'./assets/profileImgs/' + user?.pI"
+
             loading="eager"
             class="rounded-circle mr-1"
             alt="Chris Wood"

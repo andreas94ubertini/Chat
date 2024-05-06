@@ -5,7 +5,7 @@ import { ChatComponent } from './components/chat/chat.component';
 import { ProfiloUtenteComponent } from './components/profilo-utente/profilo-utente.component';
 import { RegisterComponent } from './components/register/register.component';
 import { CreateChatRoomComponent } from './components/create-chat-room/create-chat-room.component';
-import { AddUserToChatComponent } from './components/login/login/add-user-to-chat/add-user-to-chat.component';
+import { AddUserToChatComponent } from './components/add-user-to-chat/add-user-to-chat.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },

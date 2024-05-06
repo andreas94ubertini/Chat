@@ -1,154 +1,3 @@
-<!-- <main class="content">
-  <div class="container p-0">
-    <div class="card glass" *ngIf="chat">
-      <div class="card-header bg-primary text-white">
-        <h3 class="card-title">Chat</h3>
-        <button
-          *ngIf="chat.roN != 'Master Room'"
-          class="btn btn-light"
-          (click)="addtrigger()"
-        >
-          Aggiungi Utente
-        </button>
-      </div>
-
-      <div class="card-body">
-        <div class="row">
-          <div class="col-md-3">
-            <div class="list-group">
-              <a
-                href="#"
-                class="list-group-item list-group-item-action border-0"
-                *ngFor="let user of chat.use"
-              >
-                {{ user }}
-              </a>
-            </div>
-          </div>
-
-          <div class="col-md-9">
-            <div class="chat-messages">
-              <div
-                *ngFor="let message of chat.messages"
-                [ngClass]="
-                  currentUser == message.sen
-                    ? 'd-flex justify-content-end chat-messages p-4'
-                    : 'chat-messages p-4'
-                "
-              >
-                <div class="chat-message-right pb-4">
-                  <div>
-                    <img
-                      src="https://bootdey.com/img/Content/avatar/avatar1.png"
-                      class="rounded-circle mr-1"
-                      alt="Chris Wood"
-                      width="40"
-                      height="40"
-                    />
-                    <div class="font-weight-bold mb-1">
-                      {{ message.sen }}
-                    </div>
-                    <div class="text-muted small text-nowrap mt-2">
-                      {{ message.dat | date : "dd/MM/yyyy" }}
-                    </div>
-                  </div>
-                  <div class="flex-shrink-1 bg-light rounded py-2 px-3 mr-3">
-                    {{ message.tex }}
-                  </div>
-                </div>
-              </div>
-            </div>
-            {{ message.tex }}
-            <div class="send-message-area">
-              <app-sendmessagge></app-sendmessagge>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> 
-</main>-->
-
-<!-- <section style="background-color: #cdc4f9" *ngIf="chat">
-  <div class="container py-5">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="card" id="chat3" style="border-radius: 15px">
-          <div class="card-body">
-            <div class="row">
-              <div class="col-md-6 col-lg-5 col-xl-4 mb-4 mb-md-0">
-                <div class="p-3">
-                  <div
-                    data-mdb-perfect-scrollbar="true"
-                    style="position: relative; height: 400px"
-                  >
-                    <ul class="list-unstyled mb-0">
-                      <li
-                        class="p-2 border-bottom"
-                        *ngFor="let user of chat.use"
-                      >
-                        <a href="#!" class="d-flex justify-content-between">
-                          <div class="d-flex flex-row">
-                            <div class="pt-1">
-                              <p class="fw-bold mb-0">Marie Horwitz</p>
-                              <p class="small text-muted">
-                                Hello, Are you there?
-                              </p>
-                            </div>
-                          </div>
-                          <div class="pt-1">
-                            <p class="small text-muted mb-1">Just now</p>
-                            <span class="badge bg-danger rounded-pill float-end"
-                              >3</span
-                            >
-                          </div>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-6 col-lg-7 col-xl-8">
-                <div
-                  class="pt-3 pe-3"
-                  data-mdb-perfect-scrollbar="true"
-                  style="position: relative; height: 400px"
-                >
-                  <div
-                    class="d-flex flex-row justify-content-start"
-                    *ngFor="let message of chat.messages"
-                    [ngClass]="
-                      currentUser == message.sen
-                        ? 'd-flex justify-content-end  chat-messages p-4'
-                        : 'chat-messages p-4'
-                    "
-                  >
-                    <div>
-                      <p>{{ message.sen }}</p>
-                      <p
-                        class="small p-2 ms-3 mb-1 rounded-3"
-                        [ngClass]="
-                          currentUser == message.sen ? 'bg-primary' : 'bg-white'
-                        "
-                      >
-                        {{ message.tex }}
-                      </p>
-                      <p class="small ms-3 mb-3 rounded-3 text-muted float-end">
-                        {{ message.dat | date : "dd/MM/yyyy" }}
-                      </p>
-                    </div>
-                  </div>
-                  <app-sendmessagge></app-sendmessagge>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
 
 <div class="container bootstrap snippets bootdey mt-5" *ngIf="chat">
   <div class="tile tile-alt" id="messages-main">
@@ -162,7 +11,7 @@
           <div class="text-center">
             <img
               src="https://bootdey.com/img/Content/avatar/avatar4.png"
-              alt=""
+              alt="profileImg"
               class="img-avatar"
             />
           </div>
@@ -180,7 +29,10 @@
         <div class="visible-xs" id="ms-menu-trigger">
           <i class="fa fa-bars"></i>
         </div>
-
+        <div class="d-flex flex-column justify-content-center align-items-center">
+          <h2>{{chat.roN}}</h2>
+          <h3>{{chat.des}}</h3>
+        </div>
         <ul class="ah-actions actions">
           <li>
             <i

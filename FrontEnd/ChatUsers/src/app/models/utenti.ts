@@ -5,7 +5,7 @@ export class Utenti {
 
   ps: string | undefined;
 
-  pI!: string;
+  pI: string | undefined;
 
   myChats: Chatroom[] | undefined;
 }

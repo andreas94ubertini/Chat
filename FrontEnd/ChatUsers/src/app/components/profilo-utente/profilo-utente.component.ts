@@ -17,16 +17,10 @@ export class ProfiloUtenteComponent {
     if(!localStorage.getItem("ilToken")){
       this.router.navigateByUrl("")
     }
-    this.profileSvc.recuperaProfilo().subscribe(res=>{
-      this.user=res.data;
-      console.log(this.user)
-      setTimeout(()=>{
-        localStorage.setItem("profileImg", this.user!.pI)
-      },1000)
-    })
+
   }
   ngOnInit(){
-
+    this.getProfile()
   }
 
   LogOut() {
@@ -34,6 +28,13 @@ export class ProfiloUtenteComponent {
     this.router.navigateByUrl("")
   }
 
+getProfile(){
+    this.profileSvc.recuperaProfilo().subscribe(res=>{
+        this.user=res.data;
+        console.log(this.user)
+        console.log(this.user?.pI)
+    })
+}
 
   changeImg() {
     this.user!.pI = this.img
