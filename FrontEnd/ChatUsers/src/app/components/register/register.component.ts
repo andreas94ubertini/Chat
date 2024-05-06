@@ -10,6 +10,7 @@ import { Router } from '@angular/router';
 export class RegisterComponent {
   username: string = '';
   password: string = '';
+  agree!: boolean;
   constructor(private service: AuthserviceService, private router: Router) {}
 
   registrazione(): void {

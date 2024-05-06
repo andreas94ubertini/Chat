@@ -1,9 +1,10 @@
-<form style="width: 22rem">
+<form class="mt-5 border border-light rounded p-3" name="registrati">
+  <h2 class="text-center text-light my-2">Registrati</h2>
   <div data-mdb-input-init class="form-outline mb-4 mt-5">
     <input
       type="text"
       id="form5Example1"
-      class="form-control pt-4 text-white"
+      class="form-control pt-4 text-white border-bottom border-light"
       name="username"
       [(ngModel)]="username"
     />
@@ -16,18 +17,19 @@
       name="password"
       type="password"
       id="form5Example2"
-      class="form-control pt-4 text-white"
+      class="form-control pt-4 text-white border-bottom border-light"
     />
     <label class="form-label text-white" for="form5Example2">Password</label>
   </div>
 
   <div class="form-check d-flex justify-content-center mb-4">
     <input
+      [(ngModel)]="agree"
       class="form-check-input me-2"
       type="checkbox"
+      name="agree"
       value=""
       id="form5Example3"
-      checked
     />
     <label class="form-check-label text-white" for="form5Example3">
       I have read and agree to the terms
@@ -38,7 +40,7 @@
     (click)="registrazione()"
     data-mdb-ripple-init
     type="button"
-    class="btn btn-primary btn-block mb-4"
+    [ngClass]="agree? 'btn btn-primary btn-block mb-4': 'btn btn-primary btn-block mb-4 disabled'"
   >
     Subscribe
   </button>
