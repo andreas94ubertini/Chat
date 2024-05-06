@@ -63,7 +63,20 @@ namespace ChatApi.Controllers
             });
         }
 
-        
+        [HttpPut("modificaImg")]
+        [AuthorizeUserType("USER")]
+        public IActionResult ModifyProfileImg(UtentiDto userDto) {
+
+            if (_service.UpdateProfileImg(userDto))
+                return Ok(new Risposta()
+                {
+                    Status = "Success"
+                });
+            return Ok(new Risposta()
+            {
+                Status = "Errore"
+            });
+        }
 
         [HttpGet("AllUsers")]
         public IActionResult GetAllUsers()
