@@ -1,6 +1,11 @@
 <form class="mt-5 border border-light rounded p-3" name="registrati">
+<<<<<<< HEAD
   <h2 class="text-center text-light my-2">Registrati</h2>
   <div data-mdb-input-init class="form-outline mb-4 mt-5">
+=======
+  <h2 class="text-center text-light my-2"></h2>
+  <div data-mdb-input-init class="form-outline border-bottom border-light mb-4">
+>>>>>>> main
     <input
       type="text"
       id="form5Example1"
@@ -11,7 +16,7 @@
     <label class="form-label text-white" for="form5Example1">Name</label>
   </div>
 
-  <div data-mdb-input-init class="form-outline mb-4">
+  <div data-mdb-input-init class="form-outline border-bottom border-light mb-4">
     <input
       [(ngModel)]="password"
       name="password"
@@ -30,6 +35,10 @@
       name="agree"
       value=""
       id="form5Example3"
+<<<<<<< HEAD
+=======
+      name="agree"
+>>>>>>> main
     />
     <label class="form-check-label text-white" for="form5Example3">
       I have read and agree to the terms
@@ -37,10 +46,18 @@
   </div>
 
   <button
+    [ngClass]="
+      agree
+        ? 'btn btn-primary btn-block mb-4'
+        : 'btn btn-primary btn-block mb-4 disabled '
+    "
     (click)="registrazione()"
     data-mdb-ripple-init
     type="button"
+<<<<<<< HEAD
     [ngClass]="agree? 'btn btn-primary btn-block mb-4': 'btn btn-primary btn-block mb-4 disabled'"
+=======
+>>>>>>> main
   >
     Subscribe
   </button>

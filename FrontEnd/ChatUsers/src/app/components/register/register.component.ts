@@ -17,7 +17,12 @@ export class RegisterComponent {
     this.service
       .registra(this.username, this.password)
       .subscribe((risultato) => {
-        console.log(risultato);
+        this.service.login(this.username, this.password).subscribe(res=>{
+          if (res.token) {
+            localStorage.setItem('ilToken', res.token);
+            this.router.navigateByUrl("/profilo")
+          }
+        });
       });
   }
 }
